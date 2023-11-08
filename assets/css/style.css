@@ -72,3 +72,50 @@ body{
         width: 13rem;
     }
 }
+footer{
+    background: #E1E4EC;
+}
+.area-footer{
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-evenly;
+}
+footer h3{
+    color: #28BCFC;
+    text-align: center;
+}
+.area1 p{
+    font-size: .825rem;
+    display: flex;
+    align-items: center;
+    color: #5F6F92;
+}
+.area1 img{
+    margin-right: .725rem;
+    max-width: 1.425rem;
+}
+.area2{
+    padding-right: 7rem;
+}
+.area2 img{
+    max-width: 1.725rem;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.area2 h3{
+    margin-bottom: 1rem;
+}
+.area3 ul{
+    list-style: none;
+}
+.area3 ul li a{
+    text-decoration: none;
+    color: #5F6F92;
+}
+.area3 ul li a:hover{
+    color: #28BCFC;
+}
+.area4{
+    text-align: center;
+    color: #5F6F92;
+}
