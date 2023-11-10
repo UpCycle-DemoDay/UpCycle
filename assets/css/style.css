@@ -1,11 +1,3 @@
-/**
-* Template Name: FlexStart
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -14,7 +6,9 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #444444;
 }
 
@@ -34,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto condensed", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -55,7 +49,7 @@ section {
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #4154f1;
+  color: #28BCFC;
   text-transform: uppercase;
 }
 
@@ -337,14 +331,14 @@ section {
 
 .navbar .dropdown .dropdown ul {
   top: 0;
-  left: calc(100% - 30px);
+  left: calc(-100% + 30px);
   visibility: hidden;
 }
 
 .navbar .dropdown .dropdown:hover>ul {
   opacity: 1;
   top: 0;
-  left: 100%;
+  left: -100%;
   visibility: visible;
 }
 
@@ -374,7 +368,7 @@ section {
   color: #fff;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -473,7 +467,7 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background: url(../img/background.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -497,12 +491,12 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
+  background: #2db6fa;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
 .hero .btn-get-started span {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -576,7 +570,7 @@ section {
 .about h3 {
   font-size: 14px;
   font-weight: 700;
-  color: #4154f1;
+  color: #28BCFC;
   text-transform: uppercase;
 }
 
@@ -597,7 +591,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
+  background: #28BCFC;
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
@@ -715,7 +709,7 @@ section {
 }
 
 .features .feature-box:hover i {
-  background: #4154f1;
+  background: #28BCFC;
   color: #fff;
 }
 
