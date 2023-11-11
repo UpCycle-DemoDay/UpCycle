@@ -9,10 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> 
+    <link href="../assets/css/style.css" rel="stylesheet">
     <title>Perfil do Usuário</title>
 </head>
 <body>
+
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="../assets/img/favicon.png" alt="">
+            <span>UpCycle</span>
+          </a>
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a class="nav-link scrollto" href="#contact">Sair</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+    
+        </div>
+      </header>
 
     <div class="caixa">
         <img src="img/perfil.jpg" alt="">
@@ -25,29 +51,42 @@
         <a href="#"><button class="botao">Meus Dados</button></a>
     </div>
 
-    <p class="solicitacao">Histórico de Solicitação</p>
-
-    <div class="pontos">
-        <p class="total">Total de Pontos</p><br>
-        <h3>126</h3><br>
-        <a href="#"><button>Trocar pontos</button></a>
+    <div class="container">
+        <div class="pontos">
+            <div>
+                <p class="total">Total de Pontos</p>
+                <div class="pontuacao">
+                    <h3>126</h3>
+                </div>
+            </div>
+            <a href="#"><button>Trocar pontos</button></a>
+        </div>
+    
+        <div class="historicos">
+            <h3>Histórico de Solicitação</h3>
+            <div class="historico">
+                <div>
+        
+                <p class="data">Data e hora: 02/11/2023 - 13h</p>
+                <p class="material">Material: Fogão</p>
+                <a href="#" class="descricao">Descrição completa</a>
+        
+                </div>
+        
+                <button>Concluída</button>
+            </div>
+        
+            <div class="historico">
+                <div>
+                    <p class="data">Data e hora: 26/10/2023 - 16h</p>
+                    <p class="material">Material: Latinhas</p>
+                    <a href="#" class="descricao">Descrição completa</a>
+                </div>
+                
+                <button>Concluída</button>
+            </div>
+        </div>
     </div>
-
-    <div class="historico">
-        <p class="data">Data e hora: 02/11/2023 - 13h</p><br>
-        <p class="material">Material: Fogão</p><br>
-        <p class="descricao">Descrição completa</p>
-
-        <button>Concluída</button>
-    </div>
-
-    <div class="historico1">
-        <p class="data">Data e hora: 26/10/2023 - 16h</p><br>
-        <p class="material">Material: Latinhas</p><br>
-        <p class="descricao">Descrição completa</p>
-
-        <button>Concluída</button>
-    </div>
-
+    
 </body>
 </html>
