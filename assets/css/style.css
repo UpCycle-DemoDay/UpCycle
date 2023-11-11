@@ -1806,7 +1806,7 @@ section {
 
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #4154f1;
+  background: #28BCFC;
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
@@ -2085,7 +2085,7 @@ section {
 
 .blog .blog-pagination li.active a,
 .blog .blog-pagination li:hover a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .blog .sidebar {
