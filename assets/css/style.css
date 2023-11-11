@@ -130,7 +130,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: #28BCFC;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -144,7 +144,7 @@ section {
 }
 
 .back-to-top:hover {
-  background: #6776f4;
+  background: #7edbf9;
   color: #fff;
 }
 
@@ -242,7 +242,7 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #4154f1;
+  color: #28BCFC;
 }
 
 .navbar .getstarted,
@@ -294,7 +294,7 @@ section {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #4154f1;
+  color: #28BCFC;
 }
 
 .navbar .dropdown:hover>ul {
@@ -1621,7 +1621,7 @@ section {
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
-  color: #4154f1;
+  color: #28BCFC;
 }
 
 .contact .info-box h3 {
@@ -1694,7 +1694,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #4154f1;
+  border-color: #28BCFC;
 }
 
 .contact .php-email-form input[type=text],
@@ -1707,7 +1707,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #4154f1;
+  background: #28BCFC;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1716,7 +1716,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #5969f3;
+  background: #80d8fe;
 }
 
 @keyframes animate-loading {
@@ -2397,7 +2397,7 @@ section {
 }
 
 .footer .footer-top .footer-links ul a:hover {
-  color: #4154f1;
+  color: #28BCFC;
 }
 
 .footer .footer-top .footer-contact p {
