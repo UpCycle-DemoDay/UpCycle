@@ -7,87 +7,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> 
-    <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="perfilUser.css">
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <title>Perfil do Usuário</title>
 </head>
 <body>
-
-    <header id="header" class="header fixed-top">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-    
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="../assets/img/favicon.png" alt="">
-            <span>UpCycle</span>
-          </a>
-    
-          <nav id="navbar" class="navbar">
-            <ul>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a class="nav-link scrollto" href="../index.html">Sair</a></li>
+    <aside class="sidebar">
+        <div class="wrapper">
+            <div class="sidebar-logo">
+                <div class="image">
+                    <img src="../assets/img/favicon.png" alt="">
+                </div>
+                <div class="text-logo">
+                    <h3>UpCycle</h3>
+                </div>
+            </div>
+            <div class="toggle-icon">
+                <i class="bi bi-chevron-left"></i>
+            </div>
+            <ul class="navbar-item" id="navbar-item">
+                <li class="nav-item">
+                    <a href="" class="nav-link active">
+                        <i class="bi bi-house"></i>
+                        <div class="text">
+                            Home
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i class="bi bi-calendar"></i>
+                        <div class="text">
+                            Agendamento
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i class="bi bi-wallet2"></i>
+                        <div class="text">
+                            Carteira
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i class="bi bi-reception-4"></i>
+                        <div class="text">
+                            trocar pontos
+                        </div>
+                    </a>
+                </li>
             </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
-    
-        </div>
-      </header>
-
-    <div class="caixa">
-        <img src="img/perfil.jpg" alt="">
-        <h1>Júlia Silva</h1>
-    </div>
-
-    <div class="botoes-container">
-        <a href="#"><button class="botao">Solicitar Coleta</button></a>
-        <a href="#"><button class="botao">Carteira</button></a>
-        <a href="#"><button class="botao">Meus Dados</button></a>
-    </div>
-
-    <div class="container">
-        <div class="pontos">
-            <div>
-                <p class="total">Total de Pontos</p>
-                <div class="pontuacao">
-                    <h3>126</h3>
-                </div>
-            </div>
-            <a href="#"><button>Trocar pontos</button></a>
-        </div>
-    
-        <div class="historicos">
-            <h3>Histórico de Solicitação</h3>
-            <div class="historico">
-                <div>
-        
-                <p class="data">Data e hora: 02/11/2023 - 13h</p>
-                <p class="material">Material: Fogão</p>
-                <a href="#" class="descricao">Descrição completa</a>
-        
-                </div>
-        
-                <button>Concluída</button>
-            </div>
-        
-            <div class="historico">
-                <div>
-                    <p class="data">Data e hora: 26/10/2023 - 16h</p>
-                    <p class="material">Material: Latinhas</p>
-                    <a href="#" class="descricao">Descrição completa</a>
-                </div>
-                
-                <button>Concluída</button>
+            <div class="bottom-content">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="bi bi-door-open"></i>
+                        <div class="text">
+                            Sair
+                        </div>
+                    </a>
+                </li>
             </div>
         </div>
-    </div>
-    
+    </aside>
+
+    <aside class="bottom-nav">
+        
+    </aside>
+
+    <script src="perfilUser.js"></script>
 </body>
 </html>
