@@ -121,27 +121,92 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
-    }
-    .top p{
+}
+.top p{
     margin-right: 1rem;
     font-size: 20px;
     font-weight: 700;
     color: #012970;
-    }
-    .marginMain{
+}
+.marginMain{
     margin-left: 250px;
     padding: 2rem;
-    }
-    .point{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        height: 230px;
-        width: 250px;
-        background-color: #fff;
-    }
-    
+    display: flex;
+    flex-direction: column;
+}
+.marginSide{
+    margin-left: 85px;
+    padding: 2rem;
+}
+.organize{
+    display: flex;
+}
+.point{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+    width: 250px;
+    background-color: #fff;
+}
+.meta{
+    background-color: #fff;
+    width: 75%;
+    height: 230px;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.progressBar{
+    width: 90%;
+    height: 10px;
+    background-color: #012970;
+    border-radius: 5px;
+}
+.progress{
+    width: 70%;
+    background-color: #26D64C;
+    height: 10px;
+    border-radius: 5px 0 0 5px;
+}
+.historico{
+    background-color: #fff;
+    height: 340px;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 15px;
+}
+.card{
+    background-color: #86e59a;
+    height: 80%;
+    width: 25%;
+    margin: 0 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card h4{
+    text-align: center;
+}
+.card span{
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+.card div{
+    margin: .5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: .5rem;
+}
+
 @media screen and (max-width:767px) {
     .bottom-nav {
         width: 50%;
@@ -223,13 +288,34 @@ body{
         margin: 0;
         padding: .8rem; 
     }
+    .historico{
+        height: 300px;
+    }
 }
+
+ @media(max-width: 1200px) 
+ {
+    #card4{
+        display: none;
+    }
+    .card{
+        width: 33.3%;
+    }
+ }
+@media(max-width: 1000px)
+{
+    #card3{
+        display: none;
+       }
+       .card{
+        width: 50%;
+       }
+}
+
 @media(max-width: 900px)
  {
    .bottom-nav{
      width: 100%;
      left: 0;
-   }  
+   }
  }
-
-

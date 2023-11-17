@@ -1,12 +1,19 @@
 const toggleClose = document.querySelector('.toggle-icon')
 const sidebar = document.querySelector('.sidebar')
 const textLogo = document.querySelector('.text-logo')
+const margin = document.getElementById('marginMain')
 
 toggleClose.addEventListener('click', () => (
     sidebar.classList.toggle('close')
 ))
 toggleClose.addEventListener('click', () => (
     toggleClose.classList.toggle('close')
+))
+toggleClose.addEventListener('click', () => (
+    margin.classList.toggle('marginMain')
+))
+toggleClose.addEventListener('click', () => (
+    margin.classList.toggle('marginSide')
 ))
 toggleClose.addEventListener('click', () => (
     textLogo.classList.toggle('text-logo-close')
