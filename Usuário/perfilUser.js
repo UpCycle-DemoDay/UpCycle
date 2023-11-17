@@ -22,32 +22,63 @@ for(let i=0; i<navLink.length; i++){
     })
 }
 
-const bottomNav = document.querySelector('.bottom-nav')
+const bottomNav = document.querySelector('.nav-mobile')
 
-const contentNav = `<p class="circle"></p>
-<span id="home" onclick="homeIcon()">
-    <i class="bi bi-house" id="home" onclick="homeIcon()"></i>
-</span>
-<span id="calendar" onclick="calendarIcon()">
-    <i class="bi bi-calendar"></i>
-</span>
-<span id="wallet" onclick="walletIcon()"> 
-    <i class="bi bi-wallet2"></i>
-</span>
-<span id="reception" onclick="receptionIcon()">
-    <i class="bi bi-reception-4"></i>
-</span>
-<span id="logout" onclick="logoutIcon()">
-    <i class="bi bi-door-open"></i>
-</span>
-<p></p>`;
+const contentNav = `<ul class="bottom-nav">
+<div class="slider"></div>
+<li>
+    <a href="#">
+        <i class="bi bi-person"></i>
+        <span>Perfil</span>
+    </a>
+</li>
+<li>
+    <a href="#">
+        <i class="bi bi-calendar"></i>
+        <span>Agendamento</span>
+    </a>
+</li>
+<li>
+    <a href="#" class="active-icon">
+        <i class="bi bi-house"></i>
+        <span>Home</span>
+    </a>
+</li>
+<li >
+    <a href="#">
+        <i class="bi bi-wallet2"></i>
+        <span>trocar pontos</span>
+    </a>
+</li>
+<li>
+    <a href="#">
+        <i class="bi bi-door-open"></i>
+        <span>Sair</span>
+    </a>
+</li>
+
+</ul>`;
 
 window.addEventListener('resize', function() {
     var largura = this.window.innerWidth
     if (largura<767){
         sidebar.classList.add('text-logo-close')
+        bottomNav.classList.remove('text-logo-close')
         bottomNav.innerHTML = contentNav
+        $(document).ready(function () {
+            $('.bottom-nav li a').click(function(){
+                var position = $(this).position();
+                var margin = 37;
+                $('.slider').css({"left": position.left + margin, "transform": "translateX(-50%)"});
+                $('.bottom-nav li a').removeClass('active-icon');
+                $(this).addClass('active-icon');
+            });
+        });
+        
     }else{
         sidebar.classList.remove('text-logo-close')
+        bottomNav.classList.add('text-logo-close')
     }
+
 })
+
