@@ -19,17 +19,106 @@ toggleClose.addEventListener('click', () => (
     textLogo.classList.toggle('text-logo-close')
 ))
 
-const navbarItem = document.getElementById('navbar-item')
-const navLink = navbarItem.getElementsByClassName('nav-link')
-for(let i=0; i<navLink.length; i++){
-    navLink[i].addEventListener('click', function() {
-        const current = document.getElementsByClassName('active')
-        current[0].className = current[0].className.replace('active', '')
-        this.className += 'active'
-    })
-}
+const perfil = document.getElementById('perfil');
+const home = document.getElementById('home');
+const agendamento = document.getElementById('agendamento');
+const carteira = document.getElementById('carteira');
+const trocar = document.getElementById('trocar');
+const logout = document.getElementById('logout');
 
-const bottomNav = document.querySelector('.nav-mobile')
+perfil.addEventListener('click', function alterarPerfil() {
+    const contentMainPerfil = ``;
+    margin.innerHTML = contentMainPerfil;
+    perfil.classList.add('active')
+    home.classList.remove('active')
+    agendamento.classList.remove('active')
+    carteira.classList.remove('active')
+    trocar.classList.remove('active')
+    logout.classList.remove('active')
+})
+home.addEventListener('click', function alterarHome(){
+    const contentMainHome = `<div class="organize">
+    <div class="point">
+        <h3>Pontuação</h3>
+        <div><h2>275</h2></div>
+    </div>
+    <div class="meta">
+        <h2>Voucher Spotify</h2>
+        <h3>Progresso</h3>
+        <h4>2745/3000</h4>
+        <div class="progressBar"><div class="progress"></div></div>
+    </div>
+</div>
+<div class="historico">
+    <article class="card" id="card1">
+        <h4>Descarte 62</h4>
+        <div>
+            <p>Endereço: Rua dias freire, 263</p>
+            <p>Valor: R$36,65</p>
+            <p>Data: 25/04/2024</p>
+        </div>
+        <span>Em andamento</span>
+    </article>
+    <article class="card" id="card2"></article>
+    <article class="card" id="card3"></article>
+    <article class="card" id="card4"></article>
+</div>`;
+
+    margin.innerHTML = contentMainHome;
+    perfil.classList.remove('active')
+    home.classList.add('active')
+    agendamento.classList.remove('active')
+    carteira.classList.remove('active')
+    trocar.classList.remove('active')
+    logout.classList.remove('active')
+})
+
+agendamento.addEventListener('click', function alterarAgendamento(){
+    const contentMainAgendamento = ``;
+    margin.innerHTML = contentMainAgendamento;
+    perfil.classList.remove('active')
+    home.classList.remove('active')
+    agendamento.classList.add('active')
+    carteira.classList.remove('active')
+    trocar.classList.remove('active')
+    logout.classList.remove('active')
+})
+carteira.addEventListener('click', function alterarCarteira(){
+    const contentMainCarteira = ``;
+    margin.innerHTML = contentMainCarteira;
+    perfil.classList.remove('active')
+    home.classList.remove('active')
+    agendamento.classList.remove('active')
+    carteira.classList.add('active')
+    trocar.classList.remove('active')
+    logout.classList.remove('active')
+})
+trocar.addEventListener('click', function alterarTrocar(){
+    const contentMainTrocar = ``;
+    margin.innerHTML = contentMainTrocar;
+    perfil.classList.remove('active')
+    home.classList.remove('active')
+    agendamento.classList.remove('active')
+    carteira.classList.remove('active')
+    trocar.classList.add('active')
+    logout.classList.remove('active')
+})
+logout.addEventListener('click', function alterarLogout(){
+    const contentMainLogout = ``;
+    margin.innerHTML = contentMainLogout;
+    perfil.classList.remove('active')
+    home.classList.remove('active')
+    agendamento.classList.remove('active')
+    carteira.classList.remove('active')
+    trocar.classList.remove('active')
+    logout.classList.add('active')
+})
+
+
+
+
+
+const bottomNav = document.querySelector('.nav-mobile');
 
 const contentNav = `<ul class="bottom-nav">
 <div class="slider"></div>
