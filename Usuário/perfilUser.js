@@ -66,9 +66,20 @@ const contentNav = `<ul class="bottom-nav">
 
 </ul>`;
 
-window.addEventListener('resize', function() {
-    var largura = this.window.innerWidth
-    if (largura<767){
+// window.addEventListener('resize', function responsive() {
+//     var largura = this.window.innerWidth
+//     if (largura<767){
+        
+        
+//     }else{
+//         sidebar.classList.remove('text-logo-close')
+//         bottomNav.classList.add('text-logo-close')
+//     }
+// })
+
+
+function responsiveTest(){
+    if(window.innerWidth<767) {
         sidebar.classList.add('text-logo-close')
         bottomNav.classList.remove('text-logo-close')
         bottomNav.innerHTML = contentNav
@@ -81,11 +92,10 @@ window.addEventListener('resize', function() {
                 $(this).addClass('active-icon');
             });
         });
-        
     }else{
         sidebar.classList.remove('text-logo-close')
         bottomNav.classList.add('text-logo-close')
     }
+}
 
-})
-
+responsiveTest();
