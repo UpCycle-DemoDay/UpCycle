@@ -116,38 +116,42 @@ logout.addEventListener('click', function alterarLogout(){
 
 
 
-
-
 const bottomNav = document.querySelector('.nav-mobile');
 
 const contentNav = `<ul class="bottom-nav">
 <div class="slider"></div>
 <li>
-    <a href="#">
+    <a href="#" id="perfil2">
         <i class="bi bi-person"></i>
         <span>Perfil</span>
     </a>
 </li>
 <li>
-    <a href="#">
+    <a href="#" id="agendamento2">
         <i class="bi bi-calendar"></i>
         <span>Agendamento</span>
     </a>
 </li>
 <li>
-    <a href="#" class="active-icon">
+    <a href="#" class="active-icon" id="home2">
         <i class="bi bi-house"></i>
         <span>Home</span>
     </a>
 </li>
 <li >
-    <a href="#">
+    <a href="#" id="carteira2">
         <i class="bi bi-wallet2"></i>
         <span>trocar pontos</span>
     </a>
 </li>
 <li>
-    <a href="#">
+    <a href="#" id="trocar2">
+        <i class="bi bi-reception-4"></i>
+        <span>Sair</span>
+    </a>
+</li>
+<li>
+    <a href="#" id="logout2">
         <i class="bi bi-door-open"></i>
         <span>Sair</span>
     </a>
@@ -166,11 +170,113 @@ function updateContent() {
             $('.bottom-nav li a').click(function(){
                 var position = $(this).position();
                 var margin = 37;
+                if(largura<400){
+                    margin = 25.5;
+                }
+                
                 $('.slider').css({"left": position.left + margin, "transform": "translateX(-50%)"});
                 $('.bottom-nav li a').removeClass('active-icon');
                 $(this).addClass('active-icon');
             });
         });
+
+        const perfil2 = document.getElementById('perfil2');
+const home2 = document.getElementById('home2');
+const agendamento2 = document.getElementById('agendamento2');
+const carteira2 = document.getElementById('carteira2');
+const trocar2 = document.getElementById('trocar2');
+const logout2 = document.getElementById('logout2');
+
+perfil2.addEventListener('click', function alterarPerfil2() {
+    const contentMainPerfil2 = ``;
+    margin.innerHTML = contentMainPerfil2;
+    perfil2.classList.add('active-icon')
+    home2.classList.remove('active-icon')
+    agendamento2.classList.remove('active-icon')
+    carteira2.classList.remove('active-icon')
+    trocar2.classList.remove('active-icon')
+    logout2.classList.remove('active-icon')
+})
+home2.addEventListener('click', function alterarHome2(){
+    const contentMainHome2 = `<div class="organize">
+    <div class="point">
+        <h3>Pontuação</h3>
+        <div><h2>275</h2></div>
+    </div>
+    <div class="meta">
+        <h2>Voucher Spotify</h2>
+        <h3>Progresso</h3>
+        <h4>2745/3000</h4>
+        <div class="progressBar"><div class="progress"></div></div>
+    </div>
+</div>
+<div class="historico">
+    <article class="card" id="card1">
+        <h4>Descarte 62</h4>
+        <div>
+            <p>Endereço: Rua dias freire, 263</p>
+            <p>Valor: R$36,65</p>
+            <p>Data: 25/04/2024</p>
+        </div>
+        <span>Em andamento</span>
+    </article>
+    <article class="card" id="card2"></article>
+    <article class="card" id="card3"></article>
+    <article class="card" id="card4"></article>
+</div>`;
+
+    margin.innerHTML = contentMainHome2;
+    perfil2.classList.remove('active-icon')
+    home2.classList.add('active-icon')
+    agendamento2.classList.remove('active-icon')
+    carteira2.classList.remove('active-icon')
+    trocar2.classList.remove('active-icon')
+    logout2.classList.remove('active-icon')
+})
+
+agendamento2.addEventListener('click', function alterarAgendamento2(){
+    const contentMainAgendamento2 = ``;
+    margin.innerHTML = contentMainAgendamento2;
+    perfil2.classList.remove('active-icon')
+    home2.classList.remove('active-icon')
+    agendamento2.classList.add('active-icon')
+    carteira2.classList.remove('active-icon')
+    trocar2.classList.remove('active-icon')
+    logout2.classList.remove('active-icon')
+})
+carteira2.addEventListener('click', function alterarCarteira2(){
+    const contentMainCarteira2 = ``;
+    margin.innerHTML = contentMainCarteira2;
+    perfil2.classList.remove('active-icon')
+    home2.classList.remove('active-icon')
+    agendamento2.classList.remove('active-icon')
+    carteira2.classList.add('active-icon')
+    trocar2.classList.remove('active-icon')
+    logout2.classList.remove('active-icon')
+})
+trocar2.addEventListener('click', function alterarTrocar2(){
+    const contentMainTrocar2 = ``;
+    margin.innerHTML = contentMainTrocar2;
+    perfil2.classList.remove('active-icon')
+    home2.classList.remove('active-icon')
+    agendamento2.classList.remove('active-icon')
+    carteira2.classList.remove('active-icon')
+    trocar2.classList.add('active-icon')
+    logout2.classList.remove('active-icon')
+})
+logout2.addEventListener('click', function alterarLogout2(){
+    const contentMainLogout2 = ``;
+    margin.innerHTML = contentMainLogout2;
+    perfil2.classList.remove('active-icon')
+    home2.classList.remove('active-icon')
+    agendamento2.classList.remove('active-icon')
+    carteira2.classList.remove('active-icon')
+    trocar2.classList.remove('active-icon')
+    logout2.classList.add('active-icon')
+})
+
+
+
     } else {
         bottomNav.classList.add('text-logo-close');
     }
@@ -180,6 +286,11 @@ document.addEventListener('DOMContentLoaded', updateContent);
 
 window.addEventListener('resize', updateContent);
 
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        home2.click();
+    }, 100); // Aguarda 100 milissegundos (ou ajuste conforme necessário)
+});
 
 
 
