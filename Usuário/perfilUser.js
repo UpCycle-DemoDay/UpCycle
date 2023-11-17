@@ -66,23 +66,13 @@ const contentNav = `<ul class="bottom-nav">
 
 </ul>`;
 
-// window.addEventListener('resize', function responsive() {
-//     var largura = this.window.innerWidth
-//     if (largura<767){
-        
-        
-//     }else{
-//         sidebar.classList.remove('text-logo-close')
-//         bottomNav.classList.add('text-logo-close')
-//     }
-// })
+function updateContent() {
+    var largura = window.innerWidth;
+    
+    if (largura < 767) {
+        bottomNav.classList.remove('text-logo-close');
+        bottomNav.innerHTML = contentNav;
 
-
-function responsiveTest(){
-    if(window.innerWidth<767) {
-        sidebar.classList.add('text-logo-close')
-        bottomNav.classList.remove('text-logo-close')
-        bottomNav.innerHTML = contentNav
         $(document).ready(function () {
             $('.bottom-nav li a').click(function(){
                 var position = $(this).position();
@@ -92,10 +82,36 @@ function responsiveTest(){
                 $(this).addClass('active-icon');
             });
         });
-    }else{
-        sidebar.classList.remove('text-logo-close')
-        bottomNav.classList.add('text-logo-close')
+    } else {
+        bottomNav.classList.add('text-logo-close');
     }
 }
 
-responsiveTest();
+document.addEventListener('DOMContentLoaded', updateContent);
+
+window.addEventListener('resize', updateContent);
+
+
+
+
+// function responsiveTest(){
+//     if(window.innerWidth<767) {
+//         sidebar.classList.add('text-logo-close')
+//         bottomNav.classList.remove('text-logo-close')
+//         bottomNav.innerHTML = contentNav
+//         $(document).ready(function () {
+//             $('.bottom-nav li a').click(function(){
+//                 var position = $(this).position();
+//                 var margin = 37;
+//                 $('.slider').css({"left": position.left + margin, "transform": "translateX(-50%)"});
+//                 $('.bottom-nav li a').removeClass('active-icon');
+//                 $(this).addClass('active-icon');
+//             });
+//         });
+//     }else{
+//         sidebar.classList.remove('text-logo-close')
+//         bottomNav.classList.add('text-logo-close')
+//     }
+// }
+
+// responsiveTest();
