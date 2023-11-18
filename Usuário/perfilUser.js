@@ -27,7 +27,32 @@ const trocar = document.getElementById('trocar');
 const logout = document.getElementById('logout');
 
 perfil.addEventListener('click', function alterarPerfil() {
-    const contentMainPerfil = ``;
+    const contentMainPerfil = `<div class="organize" id="wrap">
+    <div class="user-profile">
+        <img class="avatar" src="img/user.jpg" alt="Ash" />
+        <div class="username">Júlia Silva</div>
+    <div class="bio">
+        contribuidor(a) bronze
+    </div>
+        <div class="description">
+        Buscando acabar com a ebulição global!
+    </div>
+    <ul class="data">
+        <li>
+        <span class="entypo-heart">Descartes: 21</span>
+        </li>
+        <li>
+        <span class="entypo-eye">próximo rank: 9</span>
+        </li>
+    </ul>
+    </div>
+    <div class="meta" id="meta2">
+        <h2>Voucher Spotify</h2>
+        <h3>Progresso</h3>
+        <h4>2745/3000</h4>
+        <div class="progressBar"><div class="progress"></div></div>
+    </div>
+</div>`;
     margin.innerHTML = contentMainPerfil;
     perfil.classList.add('active')
     home.classList.remove('active')
@@ -51,7 +76,7 @@ home.addEventListener('click', function alterarHome(){
 </div>
 <div class="historico">
     <article class="card" id="card1">
-        <h4>Descarte 62</h4>
+        <h4>Descarte 21</h4>
         <div>
             <p>Endereço: Rua dias freire, 263</p>
             <p>Valor: R$36,65</p>
@@ -188,7 +213,32 @@ const trocar2 = document.getElementById('trocar2');
 const logout2 = document.getElementById('logout2');
 
 perfil2.addEventListener('click', function alterarPerfil2() {
-    const contentMainPerfil2 = ``;
+    const contentMainPerfil2 = `<div class="organize" id="wrap">
+    <div class="user-profile">
+        <img class="avatar" src="img/user.jpg" alt="Ash" />
+        <div class="username">Júlia Silva</div>
+    <div class="bio">
+        contribuidor(a) bronze
+    </div>
+        <div class="description">
+        Buscando acabar com a ebulição global!
+    </div>
+    <ul class="data">
+        <li>
+        <span class="entypo-heart">Descartes: 21</span>
+        </li>
+        <li>
+        <span class="entypo-eye">próximo rank: 9</span>
+        </li>
+    </ul>
+    </div>
+    <div class="meta" id="meta2">
+        <h2>Voucher Spotify</h2>
+        <h3>Progresso</h3>
+        <h4>2745/3000</h4>
+        <div class="progressBar"><div class="progress"></div></div>
+    </div>
+</div>`;
     margin.innerHTML = contentMainPerfil2;
     perfil2.classList.add('active-icon')
     home2.classList.remove('active-icon')
