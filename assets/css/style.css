@@ -247,7 +247,7 @@ section {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #4154f1;
+  background: #28BCFC;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -2080,7 +2080,7 @@ section {
 
 .blog .blog-pagination li.active,
 .blog .blog-pagination li:hover {
-  background: #4154f1;
+  background: #28BCFC;
 }
 
 .blog .blog-pagination li.active a,
@@ -2131,7 +2131,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #4154f1;
+  background: #28BCFC;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
