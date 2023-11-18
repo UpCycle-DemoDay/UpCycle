@@ -507,6 +507,18 @@ section {
   font-size: 18px;
   transition: 0.3s;
 }
+.img-fluid{
+  position: relative;
+  animation: mover 3s ease-in-out infinite;
+}
+@keyframes mover {
+  0%, 100%{
+    top: 0;
+  }
+  50%{
+    top: 30px;
+  }
+}
 
 .hero .btn-get-started:hover i {
   transform: translateX(5px);
