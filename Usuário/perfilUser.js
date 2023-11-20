@@ -23,8 +23,7 @@ toggleClose.addEventListener('click', () => (
 const perfil = document.getElementById('perfil');
 const home = document.getElementById('home');
 const agendamento = document.getElementById('agendamento');
-// const carteira = document.getElementById('carteira');
-const trocar = document.getElementById('trocar');
+
 const logout = document.getElementById('logout');
 
 perfil.addEventListener('click', function alterarPerfil() {
@@ -295,8 +294,6 @@ perfil.addEventListener('click', function alterarPerfil() {
     perfil.classList.add('active')
     home.classList.remove('active')
     agendamento.classList.remove('active')
-    // carteira.classList.remove('active')
-    trocar.classList.remove('active')
     logout.classList.remove('active')
 })
 home.addEventListener('click', function alterarHome(){
@@ -352,8 +349,6 @@ home.addEventListener('click', function alterarHome(){
     perfil.classList.remove('active')
     home.classList.add('active')
     agendamento.classList.remove('active')
-    // carteira.classList.remove('active')
-    trocar.classList.remove('active')
     logout.classList.remove('active')
 })
 
@@ -470,8 +465,6 @@ agendamento.addEventListener('click', function alterarAgendamento(){
     perfil.classList.remove('active')
     home.classList.remove('active')
     agendamento.classList.add('active')
-    // carteira.classList.remove('active')
-    trocar.classList.remove('active')
     logout.classList.remove('active')
     var app = {
         settings: {
@@ -512,24 +505,13 @@ agendamento.addEventListener('click', function alterarAgendamento(){
     
     app.init();
 })
-// carteira.addEventListener('click', function alterarCarteira(){
-//     const contentMainCarteira = ``;
-//     margin.innerHTML = contentMainCarteira;
-//     perfil.classList.remove('active')
-//     home.classList.remove('active')
-//     agendamento.classList.remove('active')
-//     carteira.classList.add('active')
-//     trocar.classList.remove('active')
-//     logout.classList.remove('active')
-// })
+
 trocar.addEventListener('click', function alterarTrocar(){
     const contentMainTrocar = ``;
     margin.innerHTML = contentMainTrocar;
     perfil.classList.remove('active')
     home.classList.remove('active')
     agendamento.classList.remove('active')
-    // carteira.classList.remove('active')
-    trocar.classList.add('active')
     logout.classList.remove('active')
 })
 logout.addEventListener('click', function alterarLogout(){
@@ -543,8 +525,6 @@ logout.addEventListener('click', function alterarLogout(){
     perfil.classList.remove('active')
     home.classList.remove('active')
     agendamento.classList.remove('active')
-    // carteira.classList.remove('active')
-    trocar.classList.remove('active')
     logout.classList.add('active')
 })
 
@@ -609,11 +589,9 @@ function updateContent() {
         });
 
         const perfil2 = document.getElementById('perfil2');
-const home2 = document.getElementById('home2');
-const agendamento2 = document.getElementById('agendamento2');
-// const carteira2 = document.getElementById('carteira2');
-const trocar2 = document.getElementById('trocar2');
-const logout2 = document.getElementById('logout2');
+        const home2 = document.getElementById('home2');
+        const agendamento2 = document.getElementById('agendamento2');
+        const logout2 = document.getElementById('logout2');
 
 perfil2.addEventListener('click', function alterarPerfil2() {
     const contentMainPerfil2 = `<div class="organize" id="wrap">
@@ -883,8 +861,6 @@ perfil2.addEventListener('click', function alterarPerfil2() {
     perfil2.classList.add('active-icon')
     home2.classList.remove('active-icon')
     agendamento2.classList.remove('active-icon')
-    // carteira2.classList.remove('active-icon')
-    trocar2.classList.remove('active-icon')
     logout2.classList.remove('active-icon')
 })
 home2.addEventListener('click', function alterarHome2(){
@@ -940,8 +916,6 @@ home2.addEventListener('click', function alterarHome2(){
     perfil2.classList.remove('active-icon')
     home2.classList.add('active-icon')
     agendamento2.classList.remove('active-icon')
-    // carteira2.classList.remove('active-icon')
-    trocar2.classList.remove('active-icon')
     logout2.classList.remove('active-icon')
 })
 
@@ -1058,30 +1032,17 @@ agendamento2.addEventListener('click', function alterarAgendamento2(){
     perfil2.classList.remove('active-icon')
     home2.classList.remove('active-icon')
     agendamento2.classList.add('active-icon')
-    // carteira2.classList.remove('active-icon')
-    trocar2.classList.remove('active-icon')
     logout2.classList.remove('active-icon')
 
 
 })
-// carteira2.addEventListener('click', function alterarCarteira2(){
-//     const contentMainCarteira2 = ``;
-//     margin.innerHTML = contentMainCarteira2;
-//     perfil2.classList.remove('active-icon')
-//     home2.classList.remove('active-icon')
-//     agendamento2.classList.remove('active-icon')
-//     carteira2.classList.add('active-icon')
-//     trocar2.classList.remove('active-icon')
-//     logout2.classList.remove('active-icon')
-// })
+
 trocar2.addEventListener('click', function alterarTrocar2(){
     const contentMainTrocar2 = ``;
     margin.innerHTML = contentMainTrocar2;
     perfil2.classList.remove('active-icon')
     home2.classList.remove('active-icon')
     agendamento2.classList.remove('active-icon')
-    carteira2.classList.remove('active-icon')
-    trocar2.classList.add('active-icon')
     logout2.classList.remove('active-icon')
 })
 logout2.addEventListener('click', function alterarLogout2(){
@@ -1095,8 +1056,6 @@ logout2.addEventListener('click', function alterarLogout2(){
     perfil2.classList.remove('active-icon')
     home2.classList.remove('active-icon')
     agendamento2.classList.remove('active-icon')
-    // carteira2.classList.remove('active-icon')
-    trocar2.classList.remove('active-icon')
     logout2.classList.add('active-icon')
 })
 
