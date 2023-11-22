@@ -507,7 +507,7 @@ section {
   font-size: 18px;
   transition: 0.3s;
 }
-.img-fluid{
+#animation{
   position: relative;
   animation: mover 3s ease-in-out infinite;
 }
@@ -728,6 +728,8 @@ section {
 .features .feture-tabs {
   margin-top: 120px;
 }
+
+
 
 .features .feture-tabs h3 {
   color: #012970;
@@ -2059,11 +2061,11 @@ section {
   border-radius: 4px;
   padding: 10px 20px;
   border: 0;
-  background-color: #012970;
+  background-color: #28BCFC;
 }
 
 .blog .blog-comments .reply-form .btn-primary:hover {
-  background-color: #013289;
+  background-color: #5969f3;
 }
 
 .blog .blog-pagination {
