@@ -2,7 +2,7 @@ const toggleClose = document.querySelector('.toggle-icon')
 const sidebar = document.querySelector('.sidebar')
 const textLogo = document.querySelector('.text-logo')
 const margin = document.getElementById('marginMain')
-
+/* BOTÃO DE MINIMIZAR MENU LATERAL */
 toggleClose.addEventListener('click', () => (
     sidebar.classList.toggle('close')
 ))
@@ -19,7 +19,7 @@ toggleClose.addEventListener('click', () => (
     textLogo.classList.toggle('text-logo-close')
 ))
 
-
+/* BOTÃO DE MINIMIZAR MENU LATERAL */
 const perfil = document.getElementById('perfil');
 const home = document.getElementById('home');
 const agendamento = document.getElementById('agendamento');
