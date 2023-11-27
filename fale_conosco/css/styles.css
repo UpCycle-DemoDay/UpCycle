@@ -127,7 +127,19 @@ h1, .h1 {
     font-size: 2.5rem;
   }
 }
-
+nav .container img{
+  max-width: 30px;
+}
+nav .container h1{
+  color: #012970;
+  font-size: 1.5rem;
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 125px;
+}
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
 }

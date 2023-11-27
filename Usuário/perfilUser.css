@@ -249,20 +249,22 @@ body{
     }
 }
 .card{
-    background-color: rgb(40, 103, 211);
     height: 80%;
     width: 25%;
-    margin: 0 1rem;
-    border-radius: 8px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-
+.card{
+    border-right: 1px solid rgb(143, 143, 143);
+}
+#card4{
+    border: none;
+}
 .card h4{
     text-align: center;
-    color: #fff;
 }
 .card span{
 
@@ -718,6 +720,9 @@ body{
     #card4{
         display: none;
     }
+    #card3{
+        border: none;
+    }
     .card{
         width: 33.3%;
     }
@@ -726,7 +731,11 @@ body{
 {
     #card3{
         display: none;
-       }
+    }
+    #card2{
+        border: none;
+
+    }
        .card{
         width: 50%;
        }
@@ -787,5 +796,6 @@ body{
     }
     #card1{
         width: 100%;
+        border: none;
     }
  }

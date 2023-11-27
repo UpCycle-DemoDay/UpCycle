@@ -553,7 +553,7 @@ const contentNav = `<ul class="bottom-nav">
     </a>
 </li>
 <li>
-    <a href="#" id="trocar2">
+    <a href="../pagbonificação/bonificacao.html" id="trocar2">
         <i class="bi bi-reception-4"></i>
         <span>trocar pontos</span>
     </a>
