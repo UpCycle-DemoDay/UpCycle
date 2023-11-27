@@ -353,158 +353,13 @@ home.addEventListener('click', function alterarHome(){
 })
 
 agendamento.addEventListener('click', function alterarAgendamento(){
-    const contentMainAgendamento = `<div class="container-calendar">
-    <div class="calendarInterface">
-      <div class="front">
-        <div class="current-date">
-          <h1>Dia 15, Terça-Feira</h1>
-          <h1>Janeiro 2024</h1>	
-        </div>
-
-        <div class="current-month">
-          <ul class="week-days">
-            <li>SEG</li>
-            <li>TER</li>
-            <li>QUA</li>
-            <li>QUI</li>
-            <li>SEX</li>
-            <li>SAB</li>
-            <li>DOM</li>
-          </ul>
-
-          <div class="weeks">
-            <div class="first">
-              <span class="last-month">28</span>
-              <span class="last-month">29</span>
-              <span class="last-month">30</span>
-              <span class="last-month">31</span>
-              <span>01</span>
-              <span>02</span>
-              <span>03</span>
-            </div>
-
-            <div class="second">
-              <span>04</span>
-              <span>05</span>
-              <span>06</span>
-              <span>07</span>
-              <span>08</span>
-              <span>09</span>
-              <span>10</span>
-            </div>
-
-            <div class="third">
-              <span>11</span>
-              <span>12</span>
-              <span>13</span>
-              <span>14</span>
-              <span class="active-calendar">15</span>
-              <span>16</span>
-              <span>17</span>
-            </div>
-
-            <div class="fourth">
-              <span>18</span>
-              <span>19</span>
-              <span>20</span>
-              <span class="event">21</span>
-              <span>22</span>
-              <span>23</span>
-              <span>24</span>
-            </div>
-
-            <div class="fifth">
-              <span>25</span>
-              <span>26</span>
-              <span>27</span>
-              <span>28</span>
-              <span>29</span>
-              <span>30</span>
-              <span>31</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="back">
-        <input placeholder="Anotação">
-        <div class="info">
-          <div class="date">
-            <p class="info-date">
-            Data: <span>Jan 21, 2024</span>
-            </p>
-            <p class="info-time">
-              Hora: <span>18:35</span>
-            </p>
-          </div>
-          <div class="address">
-            <p>
-              Endereço: <span>Rua Rosas do lago, 28, São Paulo, Brasil.</span>
-            </p>
-          </div>
-          <div class="observations">
-            <p>
-              Observações: <span>Uma geladeira e aproximadamente 5kg de latinha</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="actions">
-          <button class="save">
-            Desmarcar <i class="ion-checkmark"></i>
-          </button>
-          <button class="dismiss">
-            Sair <i class="ion-android-close"></i>
-          </button>
-        </div>
-      </div>
-
-    </div>
-  </div>`;
     margin.innerHTML = contentMainAgendamento;
     perfil.classList.remove('active')
     home.classList.remove('active')
     agendamento.classList.add('active')
     logout.classList.remove('active')
-    var app = {
-        settings: {
-            container: $('.calendarInterface'),
-            calendar: $('.front'),
-            days: $('.weeks span'),
-            form: $('.back'),
-            input: $('.back input'),
-            buttons: $('.back button')
-        },
-    
-        init: function() {
-            instance = this;
-            settings = this.settings;
-            this.bindUIActions();
-        },
-    
-        swap: function(currentSide, desiredSide) {
-            settings.container.toggleClass('flip');
-    
-        currentSide.fadeOut(900);
-        currentSide.hide();
-        desiredSide.show();
-    
-        },
-    
-        bindUIActions: function() {
-            settings.days.on('click', function(){
-                instance.swap(settings.calendar, settings.form);
-                settings.input.focus();
-            });
-    
-            settings.buttons.on('click', function(){
-                instance.swap(settings.form, settings.calendar);
-            });
-        }
-    }
-    
-    app.init();
 })
+
 
 trocar.addEventListener('click', function alterarTrocar(){
     const contentMainTrocar = ``;
@@ -541,7 +396,7 @@ const contentNav = `<ul class="bottom-nav">
     </a>
 </li>
 <li>
-    <a href="#" id="agendamento2">
+    <a href="solicitacao.html" id="agendamento2">
         <i class="bi bi-calendar"></i>
         <span>Agendamento</span>
     </a>
@@ -920,114 +775,6 @@ home2.addEventListener('click', function alterarHome2(){
 })
 
 agendamento2.addEventListener('click', function alterarAgendamento2(){
-    const contentMainAgendamento2 = `<div class="container-calendar">
-    <div class="calendarInterface">
-      <div class="front">
-        <div class="current-date">
-          <h1>Dia 15, Terça-Feira</h1>
-          <h1>Janeiro 2024</h1>	
-        </div>
-
-        <div class="current-month">
-          <ul class="week-days">
-            <li>SEG</li>
-            <li>TER</li>
-            <li>QUA</li>
-            <li>QUI</li>
-            <li>SEX</li>
-            <li>SAB</li>
-            <li>DOM</li>
-          </ul>
-
-          <div class="weeks">
-            <div class="first">
-              <span class="last-month">28</span>
-              <span class="last-month">29</span>
-              <span class="last-month">30</span>
-              <span class="last-month">31</span>
-              <span>01</span>
-              <span>02</span>
-              <span>03</span>
-            </div>
-
-            <div class="second">
-              <span>04</span>
-              <span>05</span>
-              <span>06</span>
-              <span>07</span>
-              <span>08</span>
-              <span>09</span>
-              <span>10</span>
-            </div>
-
-            <div class="third">
-              <span>11</span>
-              <span>12</span>
-              <span>13</span>
-              <span>14</span>
-              <span class="active-calendar">15</span>
-              <span>16</span>
-              <span>17</span>
-            </div>
-
-            <div class="fourth">
-              <span>18</span>
-              <span>19</span>
-              <span>20</span>
-              <span class="event">21</span>
-              <span>22</span>
-              <span>23</span>
-              <span>24</span>
-            </div>
-
-            <div class="fifth">
-              <span>25</span>
-              <span>26</span>
-              <span>27</span>
-              <span>28</span>
-              <span>29</span>
-              <span>30</span>
-              <span>31</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="back">
-        <input placeholder="Anotação">
-        <div class="info">
-          <div class="date">
-            <p class="info-date">
-            Data: <span>Jan 21, 2024</span>
-            </p>
-            <p class="info-time">
-              Hora: <span>18:35</span>
-            </p>
-          </div>
-          <div class="address">
-            <p>
-              Endereço: <span>Rua Rosas do lago, 28, São Paulo, Brasil.</span>
-            </p>
-          </div>
-          <div class="observations">
-            <p>
-              Observações: <span>Uma geladeira e aproximadamente 5kg de latinha</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="actions">
-          <button class="save">
-            Desmarcar <i class="ion-checkmark"></i>
-          </button>
-          <button class="dismiss">
-            Sair <i class="ion-android-close"></i>
-          </button>
-        </div>
-      </div>
-
-    </div>
-  </div>`;
     margin.innerHTML = contentMainAgendamento2;
     perfil2.classList.remove('active-icon')
     home2.classList.remove('active-icon')
