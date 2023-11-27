@@ -37,25 +37,12 @@ input,select{
 input[type="radio"]{
 	height: 12px;
 }
-a{
-	cursor: pointer;
-	border-radius: 5px;
-	border: 2px solid;
-	width: 80px;
-	height: 35px;
-	text-decoration: none;
-	color: #fff;
-}
 input[type="button"]{
 	cursor: pointer;
 	border-radius: 5px;
 	border: 2px solid;
 	width: 80px;
 	height: 35px;
-}
-a:hover{
-	background: rgb(0, 153, 51);
-	color: #fff;
 }
 input[type="button"]:hover{
 	background: rgb(0, 153, 41);
