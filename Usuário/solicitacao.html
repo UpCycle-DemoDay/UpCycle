@@ -3,16 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="solicitacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/solicitacao.css">
     <title>Solicitação de coleta</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-           <div class="cell">1</div>
-           <div class="cell">2</div>
-           <div class="cell">3</div>
+    <header>
+        <a href="perfilUser.html">X</a>
+    </header>
+    <main>
+        <h1>Solicitação de retirada de resíduos</h1>
+        <div class="container">
+            <div class="cell cell-active">1</div>
+            <div class="line line1"></div>
+            <div class="cell" id="lvl2">2</div>
+            <div class="line line2"></div>
+            <div class="cell" id="lvl3">3</div>
         </div>
-    </div>
+        <div class="form">
+            <label for="">Descrição do Material</label>
+            <input type="text" placeholder="Conjunto de latinhas" autofocus>
+            <div class="separate">
+                <div class="element" id="margin">
+                    <label for="">Tipo do material</label>
+                    <input type="text" placeholder="Ex: Alumínio">
+                    <label for="">Hora</label>
+                    <input type="time">
+                </div>
+                <div class="element">
+                    <label for="">Tamanho estimado</label>
+                    <input type="text" placeholder="Ex: Sacola de 50litros">
+                    <label for="">Dia e mês</label>
+                    <input type="text" placeholder="04/01">
+                </div>
+            </div>
+            <button type="button" id="toLvl2">Próximo</button>
+        </div>
+        
+    </main>
+    <script src="assets/js/solicitacao.js"></script>
 </body>
 </html>
