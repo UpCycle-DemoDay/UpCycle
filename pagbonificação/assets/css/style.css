@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #2487ce;
+  color: #012970;
   text-decoration: none;
 }
 
 a:hover {
-  color: #469fdf;
+  color: #28BCFC;
   text-decoration: none;
 }
 
@@ -136,7 +136,8 @@ h6 {
   line-height: 1;
   font-weight: 300;
   letter-spacing: 0.5px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 #header .logo a {
@@ -145,6 +146,7 @@ h6 {
 
 #header .logo img {
   max-height: 40px;
+  margin-right: 6px;
 }
 
 @media (max-width: 992px) {
@@ -181,10 +183,11 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 14px;
-  color: #16507b;
+  font-size: 16px;
+  color: #013289;
   white-space: nowrap;
   transition: 0.3s;
+  font-weight: bold;
 }
 
 .navbar a i,
@@ -198,7 +201,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #2487ce;
+  color: #28BCFC;
 }
 
 .navbar .getstarted,
@@ -1280,6 +1283,13 @@ section {
   background: #fff;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
   max-width: 250px;
+  transition: transform 0.3s ease-in-out;
+  transition: box-shadow 0.3s;
+}
+
+.team .member:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 20px rgba(18, 66, 101, 0.2);
 }
 
 .team .member .member-img {
