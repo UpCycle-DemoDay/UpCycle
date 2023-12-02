@@ -1,3 +1,4 @@
+/* MAIN */
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@ body{
     height: 100vh;
     background-color: #eef0f1;
 }
+/* MENU LATERAL */
 .sidebar{
     position: fixed;
     top: 0;
@@ -42,6 +44,7 @@ body{
     font-size: 25px;
     margin-left: .5rem;
 }
+/* LOGO */
 .image{
     min-width: 45px;
     display: flex;
@@ -51,6 +54,7 @@ body{
     height: 45px;
     width: 45px;
 }
+/* ICONES */
 .toggle-icon{
     position: absolute;
     right: -62px;
@@ -72,6 +76,7 @@ body{
 .toggle-icon.close{
     transform: rotate(0deg);
 }
+/* BOTOES MENU LATERAL */
 .nav-item{
     list-style: none;
     display: flex;
@@ -114,7 +119,7 @@ body{
 .text-logo-close{
     display: none;
 }
-
+/* NOME PERFIL */
 .top{
     background-color: #f8f8f8;
     height: 70px;
@@ -128,6 +133,7 @@ body{
     font-weight: 700;
     color: #012970;
 }
+/* PONTUAÇÃO */
 .marginMain{
     margin-left: 250px;
     padding: 2rem;
@@ -166,6 +172,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+/* VOUCHER */
 .meta{
     background-color: rgb(40, 103, 211);
     width: 75%;
@@ -191,18 +198,7 @@ body{
     height: 10px;
     border-radius: 5px 0 0 5px;
 }
-.historico{
-    background-color: #fff;
-    height: 340px;
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 15px 0 15px;
-    border-radius: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
+/* VOUCHER */
 .meta h2{
     background-image: linear-gradient(to right, #b4b7f7, #26d74c);
     background-clip: text;
@@ -215,7 +211,6 @@ body{
 .meta h3{
     color: #fff;
 }
-
 @keyframes rgb {
     0%{
         background-position: 0 0;
@@ -247,6 +242,18 @@ body{
     100%{
         text-shadow: 0px 0px 1px rgb(239, 220, 154);
     }
+}
+/* HISTORICO DE VENDAS */
+.historico{
+    background-color: #fff;
+    height: 340px;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .card{
     height: 80%;
@@ -284,7 +291,7 @@ body{
     border-radius: 8px;
     padding: .5rem;
 }
-
+/* PERFIL */
 .user-profile {
     width: 25em; 
     height: 11em;
@@ -348,7 +355,7 @@ body{
     font-weight: bold;
     cursor: default;
 }
-
+/* CALENDARIO */
 .container-calendar {
 	align-items: center;
 	display: flex;
@@ -618,7 +625,7 @@ body{
     padding: 1rem 2rem;
     border-radius: 5px;
 }
-
+/* RESPONSIVIDADE */
 @media screen and (max-width:767px) {
     .sidebar{
         display: none;

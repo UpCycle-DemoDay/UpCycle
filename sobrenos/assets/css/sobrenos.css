@@ -91,28 +91,28 @@ h6 {
   padding: 0;
 }
 
-.navbar ul {
+.navbar-aa ul {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: inline-flex;
   list-style: none;
   align-items: center;
 }
 
-.navbar li {
+.navbar-aa li {
+  display: flex;
   position: relative;
 }
 
-.navbar a,
-.navbar a:focus {
-  display: flex;
+.navbar-aa a,
+.navbar-aa a:focus {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: #004289;
-  font-weight: 500;
+  font-weight: 700;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -1166,11 +1166,12 @@ section {
   }
 }
 
-.marca{
-  margin-left: 20vh;
-  margin-bottom: 30px;
+.marca {
+  display: flex;
 }
-
+.img-logo {
+  margin: auto;
+}
 .sobrecores{
   margin-top: 100px;
   margin-bottom: 50px;
