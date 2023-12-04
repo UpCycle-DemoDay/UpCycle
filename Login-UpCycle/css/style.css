@@ -2,7 +2,9 @@
     position: relative;
     height: 100vh;
 }
-
+.centered-image{
+    margin: 0;
+}
 .logo-container{
     display: flex;
     align-items: center;
@@ -13,7 +15,7 @@
     max-width: 50px;
 }
 .logo-container h1{
-    color: #0056b3;
+    color: white;
 }
 main{
     display: flex;
@@ -30,4 +32,4 @@ main{
     height: 100%;
     object-fit: cover;
     z-index: -1; /* Para garantir que o vídeo fique atrás do conteúdo */
- }
+}
