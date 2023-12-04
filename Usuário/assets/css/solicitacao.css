@@ -1,303 +1,250 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', 'Roboto condensed', arial;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
 }
-.container{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-a{
-    text-decoration: none;
-    color: #012970;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 1.2em;
 
+html {
+    font-size: 14px;
+    line-height: 1.4;
 }
-h1{
-    text-align: center;
-    font-size: 1.5em;
+body {
+    font-family: 'Lato', sans-serif;
+    color: #777;
+    font-weight: 400;
+}
+
+h4.subheading {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+}
+.column-4 {
+    float: left;
+    width: 33.33%;
+}
+.column-4:not(:last-child){
+    padding-right: 20px;
+}
+.form__radio-group {
+    display: inline-block;
+    width: 49%;
     margin-bottom: 1.5rem;
 }
-main{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.cell{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #b0b0b0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-.line{
-    height: 3px;
-    width: 60px;
-    background-color: #b0b0b0;
-}
-.line-active{
-    height: 3px;
-    width: 60px;
-    background-color: #26D64C;
-}
-.cell-active{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    background-color: #26D64C;
-}
-.form{
-    height: 300px;
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-}
-.form label{
-    font-weight: 600;
-}
-.separate{
-    display: flex;
-}
-#margin{
-    margin-right: 1rem;
-}
-.element{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-input[type="text"]{
-    border-radius: 7px;
-    border: 3px solid #E1E4EC;
-    height: 2rem;
-    margin-bottom: 1rem;
-    padding-left: 5px;
-}
-input[type="time"]{
-    border: 3px solid #E1E4EC;
-    border-radius: 7px;
-    height: 2rem;
-}
-input::placeholder{
-    color: #b0b0b0;
-}
-input{
-    margin-top: .4rem;
-}
-button{
-    border: none;
-    padding: .8rem 1.6rem;
-    background-color: #26D64C;
-    border-radius: 8px;
-    color: #fff;
-    font-weight: 600;
-    margin-top: 1rem;
-    margin: 1rem auto 0 auto;
-    cursor: pointer;
-    transition: .2s ease;
-}
-button:focus{
-    background-color: #7fe495;
-    transform: scale(.9);
-}
-.peso{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 250px;
-    margin-top: 2rem;
-    justify-content: space-around;
-}
-.select {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 15px;
-    width: 100%;
-}
-.select select {
-    display: inline-block;
-    width: 100%;
-    cursor: pointer;
-    padding: 10px 15px;
-    outline: 0;
-    border: 2px solid #000000;
-    border-radius: 7px;
-    background: #ffffff;
-    color: #b0b0b0;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-.select select::-ms-expand {
+.form__radio-input {
     display: none;
 }
-.select select:hover,
-.select select:focus {
-    color: #000000;
-    background: #f7f7f7;
+.form__radio-label {
+    position: relative;
+    font-size: 1.4rem;
+    padding-left: 3.5rem;
+    cursor: pointer;
 }
-.select select:disabled {
-    opacity: 0.7;
-    pointer-events: none;
-}
-.select_arrow {
+.form__radio-button {
     position: absolute;
-    top: 13px;
-    right: 15px;
-    width: 0px;
-    height: 0px;
-    border: solid #000000;
-    border-width: 0 3px 3px 0;
+    top: -.4rem;
+    left: 0;
     display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-.select select:hover ~ .select_arrow,
-.select select:focus ~ .select_arrow {
-    border-color: #000000;
-}
-.select select:disabled ~ .select_arrow {
-    border-top-color: #cccccc;
-}
-.adress{
-    display: flex;
-    width: 90vw;
-    margin-top: 2rem;
-}
-.adress div{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-.adress :first-child{
-    margin-right: 1rem;
-}
-.loading{
-    width: 50px;
-    height: 50px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid 4px #55c57a;
     border-radius: 50%;
-    border-top: 5px solid #000000;
-    border-bottom: 5px solid #000000;
-    border-left: 5px solid #fff;
-    border-right: 5px solid #fff;
-    animation: girar 1s infinite linear;
 }
-#imgConfirm{
-    max-width: 150px;
-    margin-bottom: 1rem;
+.form__radio-button::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 1.18rem;
+    height: 1.18rem;
+    border-radius: 50%;
+    background-color: #55c57a;
+    opacity: 0;
+    transition: opacity .3s;
 }
-@keyframes girar {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+    opacity: 1;
 }
-#imgAcompanhamento{
-    max-width: 80vw;
+#regiration_form fieldset:not(:first-of-type) {
+    display: none;
 }
-@media screen and (max-width: 420px) {
-    .form label{
-        font-size: .6em;
-    }
-    h1{
-        font-size: 1em;
-    }
-    .line,
-    .line-active{
-        width: 40px;
-    }
-    
-    #margin{
-        margin: 0;
-    }
+#msform {
+    width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
 }
-.acompanhamentoDescricao{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
 }
-.black{
-    display: flex;
-    width: 150px;
-    align-items: center;
-    justify-content: space-between;
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
 }
-.black-line{
-    height: 8px;
-    width: 40px;
-    background-color: #000000;
-    border-radius: 3px;
+/*inputs*/
+#msform input, #msform textarea, #msform select {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #777;
+	font-size: 13px;
 }
-.blue{
-    display: flex;
-    width: 225px;
-    align-items: center;
-    justify-content: space-between;
+#msform select { padding-bottom: 13px; }
+#msform input:focus, 
+#msform textarea:focus,
+#msform select:focus {
+    outline: 0;
 }
-.blue-line{
-    height: 8px;
-    width: 40px;
-    background-color: #28BCFC;
-    border-radius: 3px;
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+    background: #27AE60;
+    font-family: inherit;
+    font-size: 1.1rem;
+	font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
 }
-.corDescricao{
-    text-align: end;
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
-.corDescricao h1{
-    color: #26D64C;
+/*headings*/
+.fs-title {
+	margin-bottom: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all ease .2s;
 }
-.corDescricao :nth-child(2){
-    color: #26D64C;
+.fs-subtitle {
+	font-weight: normal;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
-.corDescricao :nth-child(3){
-    color: rgb(231, 231, 49);
+.form__row h4.label-title {
+    margin-bottom: 10px;
+    text-align: left;
+    color: #55c57a;
 }
-.corDescricao :nth-child(4){
-    color: #d41f1f;
+.form__row .form__radio-label {
+    float: left;
 }
-@media screen and (max-width: 925px) {
-    .corDescricao h1{
-        font-size: 1em;
-    }
-    .corDescricao p{
-        font-size: .7em;
-    }
-    #imgAcompanhamento{
-        max-width: 100%;
-    }
-    .acompanhamentoDescricao{
-        width: 100%;
-    }
+.form__row .form__radio-button {
+    top: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: solid 2px #55c57a;
 }
-@media screen and (max-width: 430px) {
-    .corDescricao h1{
-        font-size: .7em;
-    }
-    .corDescricao p{
-        font-size: .5em;
-    }
-    .lines-descricao p{
-        font-size: 1em;
-    }
+.form__row .form__radio-button::after {
+    top: 49%;
+    left: 51%;
+    width: 0.62rem;
+    height: 0.62rem;
+}
+.form__row .form__radio-label {
+    position: relative;
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+.btn-row {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+}
+.btn-row a {
+    float: right;
+    color: #55c57a;
+}
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: #55c57a;
+	text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+	width: 25%;
+	float: left;
+	position: relative;
+}
+#progressbar li img {
+    width: 28px;
+    display: block;
+    margin: 10px auto 5px;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+	color: #55c57a;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-image: linear-gradient(to right, #7ed56f, #28b485);
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: white;
 }
