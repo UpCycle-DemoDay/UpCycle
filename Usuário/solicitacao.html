@@ -6,8 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/solicitacao.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Solicitação de coleta</title>
 </head>
 <body>
@@ -15,593 +16,198 @@
         <a href="perfilUser.html">X</a>
     </header>
     <main>
-        <form id="msform">
-            <!-- progressbar -->
-            <ul id="progressbar">
-              <li class="active">CONTACT DETAILS</li>
-              <li>DRIVERS</li>
-              <li>VEHICLES</li>
-              <li>Coverage</li>
-            </ul>
-            <!-- fieldsets -->
-            <fieldset>
-              <h2 class="fs-title">CONTACT DETAILS</h2>
-              <div class="form__row">
-                <textarea type="message" placeholder="Address"></textarea>
-              </div>
-              <div class="form__row">
-                  <div class="column-4">
-                    <input type="text" placeholder="City" id="city">
-                  </div>
-                  <div class="column-4">
-                    <select class="form-select">
-                        <option selected>State</option>
-                        <option>AK</option>
-                        <option>AL</option>
-                        <option>AR</option>
-                        <option>AZ</option>
-                        <option>CA</option>
-                        <option>CO</option>
-                        <option>CT</option>
-                        <option>DC</option>
-                        <option>DE</option>
-                        <option>FL</option>
-                        <option>GA</option>
-                        <option>IA</option>
-                        <option>ID</option>
-                        <option>IL</option>
-                        <option>IN</option>
-                        <option>KS</option>
-                        <option>KY</option>
-                        <option>LA</option>
-                        <option>MA</option>
-                        <option>MD</option>
-                        <option>ME</option>
-                    </select>
-                  </div>
-                  <div class="column-4">
-                    <input type="text" placeholder="Zip" id="zip" required>
-                  </div>
-              </div>
-              <div class="form__row">
-                <input type="email" name="email" placeholder="Email" />
-              </div>
-              <div class="form__row">
-                <input type="tel" placeholder="Daytime Phone" id="dayphone">
-              </div>
-              <div class="form__row">
-                <input type="tel"placeholder="Evening Phone" id="evephone" required>
-              </div>
-              <div class="form__row">
-                <select name="self-credit" class="form-select">
-                    <option value="">Self Credit</option>
-                    <option value="Excellent">Excellent</option>
-                    <option value="Average">Average</option>
-                    <option value="Fair">Fair</option>
-                    <option value="Poor">Poor</option>
-                    <option value="Unsure">Unsure</option>
-                </select>
-              </div>
-              <div class="form__row">
-                <h4 class="label-title">Do you own or rent your home?</h4>
-                <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="small" name="size">
-                    <label for="small" class="form__radio-label">
-                        <span class="form__radio-button"></span>
-                        Own
-                    </label>
-                </div>
-                <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="large" name="size">
-                    <label for="large" class="form__radio-label">
-                        <span class="form__radio-button"></span>
-                        Rent
-                    </label>
-                </div>
-              </div>
-              <input type="button" name="previous" class="previous action-button" value="Previous" />
-              <input type="button" name="next" class="next action-button" value="Next">
-            </fieldset>
-            <fieldset>
-              <h2 class="fs-title">DRIVER</h2>
-              <h3 class="fs-subtitle">Primary Driver</h3>
-              <div class="form__row">
-                <input type="text" placeholder="First Name" id="fname">
-              </div>
-              <div class="form__row">
-                <input type="text" placeholder="Last Name" id="lname">
-              </div>
-              <div class="form__row">
-                <h4 class="label-title">Date of Birth</h4>
-                <div class="column-4">
-                    <select class="form-select">
-                        <option selected>Month</option>
-                        <option>January</option>
-                        <option>February</option>
-                        <option>March</option>
-                        <option>April</option>
-                        <option>May</option>
-                        <option>June</option>
-                        <option>July</option>
-                        <option>August</option>
-                        <option>September</option>
-                        <option>October</option>
-                        <option>November</option>
-                        <option>December</option>
-                    </select>
-                </div>
-                <div class="column-4">
-                    <select class="form-select">
-                        <option selected>Day</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                        <option>13</option>
-                        <option>14</option>
-                        <option>15</option>
-                        <option>16</option>
-                        <option>17</option>
-                        <option>18</option>
-                        <option>19</option>
-                        <option>20</option>
-                        <option>21</option>
-                        <option>22</option>
-                        <option>23</option>
-                        <option>24</option>
-                        <option>25</option>
-                        <option>26</option>
-                        <option>27</option>
-                        <option>28</option>
-                        <option>29</option>
-                        <option>30</option>
-                        <option>31</option>
-                    </select>
-                </div>
-                <div class="column-4">
-                    <select class="form-select">
-                        <option selected>Year</option>
-                        <option>1971</option>
-                        <option>1972</option>
-                        <option>1973</option>
-                        <option>1974</option>
-                        <option>1975</option>
-                        <option>1976</option>
-                        <option>1977</option>
-                        <option>1978</option>
-                        <option>1979</option>
-                        <option>1980</option>
-                        <option>1981</option>
-                        <option>1982</option>
-                        <option>1983</option>
-                        <option>1984</option>
-                        <option>1985</option>
-                        <option>1986</option>
-                        <option>1987</option>
-                        <option>1988</option>
-                        <option>1989</option>
-                        <option>1990</option>
-                        <option>1991</option>
-                        <option>1992</option>
-                        <option>1993</option>
-                        <option>1994</option>
-                        <option>1995</option>
-                        <option>1996</option>
-                        <option>1997</option>
-                        <option>1998</option>
-                        <option>1999</option>
-                        <option>2000</option>
-                        <option>2001</option>
-                        <option>2002</option>
-                        <option>2003</option>
-                        <option>2004</option>
-                        <option>2005</option>
-                    </select>
-                </div>
-              </div>
-              <div class="form__row">
-                <h4 class="label-title">Gender</h4>
-                <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="male" name="size">
-                    <label for="male" class="form__radio-label">
-                        <span class="form__radio-button"></span>
-                        Male
-                    </label>
-                </div>
-                <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="female" name="size">
-                    <label for="female" class="form__radio-label">
-                        <span class="form__radio-button"></span>
-                        Female
-                    </label>
-                </div>
-              </div>
-              <div class="form__row">
-                <input type="text" placeholder="Age first licensed in the U.S." id="licence">
-              </div>
-              <div class="form__row">
-                <select class="form-select">
-                    <option selected>Marital Status</option>
-                    <option>Single</option>
-                    <option>Married</option>
-                    <option>Divorced</option>
-                    <option>Widowed</option>
-                    <option>Separated</option>
-                </select>
-              </div>
-              <div class="form__row">
-                <select class="form-select">
-                    <option selected>Occupation</option>
-                    <option>Single</option>
-                    <option>Married</option>
-                    <option>Divorced</option>
-                    <option>Widowed</option>
-                    <option>Separated</option>
-                </select>
-              </div>
-              <div class="form__row">
-                <select class="form-select">
-                    <option selected>Highest education level</option>
-                    <option>High school</option>
-                    <option>2-year college degree</option>
-                    <option>4-year college degree</option>
-                    <option>Postgraduate degree</option>
-                    <option>Not listed</option>
-                </select>
-              </div>
-              <div class="form__row">
-                <h4 class="label-title">Has this driver been suspended or revoked in the last 5 years?</h4>
-                <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="yes" name="size">
-                    <label for="yes" class="form__radio-label">
-                        <span class="form__radio-button"></span>
-                        Yes
-                    </label>
-                </div>
-                <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="no" name="size">
-                    <label for="no" class="form__radio-label">
-                        <span class="form__radio-button"></span>
-                        No
-                    </label>
-                </div>
-              </div>
-              <div class="form__row">
-                <h4 class="label-title">Does this driver need to file a financial responsibility form (SR-22)?</h4>
-                <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="yes-1" name="size">
-                    <label for="yes-1" class="form__radio-label">
-                        <span class="form__radio-button"></span>
-                        Yes
-                    </label>
-                </div>
-                <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="no-1" name="size">
-                    <label for="no-1" class="form__radio-label">
-                        <span class="form__radio-button"></span>
-                        No
-                    </label>
-                </div>
-              </div>
-              <div class="btn-row">
-                <a href="javascript:void(0);">+ Add Another Driver</a>
-              </div>
-              <input type="button" name="previous" class="previous action-button" value="Previous" />
-              <input type="button" name="next" class="next action-button" value="Next">
-            </fieldset>
-            <fieldset>
-              <h2 class="fs-title">VEHICLE</h2>
-              <h3 class="fs-subtitle">Vehicle #1</h3>
-              <div class="form__row">
-                <select class="form-select">
-                    <option selected>Select Year</option>
-                    <option>1971</option>
-                    <option>1972</option>
-                    <option>1973</option>
-                    <option>1974</option>
-                    <option>1975</option>
-                    <option>1976</option>
-                    <option>1977</option>
-                    <option>1978</option>
-                    <option>1979</option>
-                    <option>1980</option>
-                    <option>1981</option>
-                    <option>1982</option>
-                    <option>1983</option>
-                    <option>1984</option>
-                    <option>1985</option>
-                    <option>1986</option>
-                    <option>1987</option>
-                    <option>1988</option>
-                    <option>1989</option>
-                    <option>1990</option>
-                    <option>1991</option>
-                    <option>1992</option>
-                    <option>1993</option>
-                    <option>1994</option>
-                    <option>1995</option>
-                    <option>1996</option>
-                    <option>1997</option>
-                    <option>1998</option>
-                    <option>1999</option>
-                    <option>2000</option>
-                    <option>2001</option>
-                    <option>2002</option>
-                    <option>2003</option>
-                    <option>2004</option>
-                    <option>2005</option>
-                </select>
-              </div>
-              <div class="form__row">
-                <select class="form-select">
-                    <option selected>Select Make</option>
-                    <option>select 1</option>
-                    <option>select 2</option>
-                    <option>select 3</option>
-                </select>
-              </div>
-              <div class="form__row">
-                <select class="form-select">
-                    <option selected>Select Modal</option>
-                    <option>Modal 1</option>
-                    <option>Modal 2</option>
-                    <option>Modal 3</option>
-                </select>
-              </div>
-              <div class="form__row">
-                <select class="form-select">
-                    <option selected>Primary Usage</option>
-                    <option>Pleasure</option>
-                    <option>Work/School</option>
-                    <option>Business</option>
-                    <option>Farm</option>
-                </select>
-              </div>
-              <div class="form__row">
-                <select class="form-select">
-                    <option selected>Yearly Mileage</option>
-                    <option>0 - 5000</option>
-                    <option>5001 - 10000</option>
-                    <option>10001 - 15000</option>
-                    <option>15001 - 20000</option>
-                    <option>20001 - 25000</option>
-                </select>
-              </div>
-              <div class="form__row">
-                <select class="form-select">
-                    <option selected>Comprehensive Deductible</option>
-                    <option>$0</option>
-                    <option>$200</option>
-                    <option>$250</option>
-                    <option>$500</option>
-                    <option>$1000</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <select class="form-select">
-                    <option selected>Collision Deductible</option>
-                    <option>$0</option>
-                    <option>$200</option>
-                    <option>$250</option>
-                    <option>$500</option>
-                    <option>$1000</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <input type="text" placeholder="VIN Number" id="vinumber">
-            </div>
-            <div class="btn-row">
-                <a href="javascript:void(0);">+ Add Another Driver</a>
-            </div>
-            <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">COVERAGE</h2>
-                <div class="form__row">
-                    <select class="form-select">
-                        <option selected>Have you been insured?</option>
-                        <option>5 years or more</option>
-                        <option>between 3 to 5 years</option>
-                        <option>between 1 to 3 years</option>
-                        <option>between 6 to 12 months</option>
-                        <option>less thab 6 months</option>
-                        <option>Policy has lapsed/expired</option>
-                    </select>
-                </div>
-                <div class="form__row">
-                    <select class="form-select">
-                        <option selected>Curreny insurance company</option>
-                        <optgroup label="Top Companies">
-                            <option value="Allstate">Allstate</option>
-                            <option value="Farmers Insurance">Farmers Insurance</option>
-                            <option value="GEICO">GEICO</option>
-                            <option value="Liberty Mutual Insurance Company">Liberty Mutual Insurance Company</option>
-                            <option value="Nationwide Insurance Company - Titan Indemnity">Nationwide Insurance - Titan Indem.</option>
-                            <option value="Progressive Insurance">Progressive Insurance</option>
-                            <option value="STATE FARM INS">State Farm</option>
-                            <option value="USAA">USAA</option>
-                        </optgroup>
-                        <optgroup label="Alphabetical Listing">
-                            <option value="AAA - American Automobile Association - Auto Club">AAA - Auto Club</option>
-                            <option value="AIG">AIG</option>
-                            <option value="Allied">Allied</option>
-                            <option value="Allstate">Allstate</option>
-                            <option value="American Express">American Express</option>
-                            <option value="American Family">American Family</option>
-                            <option value="American National">American National</option>
-                            <option value="Ameriprise">Ameriprise</option>
-                            <option value="Amica">Amica</option>
-                            <option value="Atlanta Casualty">Atlanta Casualty</option>
-                            <option value="Atlanta Specialty Insurance">Atlanta Specialty Insurance</option>
-                            <option value="Auto-Owners">Auto-Owners</option>
-                            <option value="Cincinnati Insurance">Cincinnati Insurance</option>
-                            <option value="Cotton States">Cotton States</option>
-                            <option value="Country Financial">Country Financial</option>
-                            <option value="Countrywide">Countrywide</option>
-                            <option value="Deerbrook Insurance">Deerbrook Insurance</option>
-                            <option value="Direct General Insurance">Direct General Insurance</option>
-                            <option value="Drive Insurance from Progressive">Drive Insurance from Progressive</option>
-                            <option value="Electric Insurance Company">Electric Insurance Company</option>
-                            <option value="Esurance">Esurance</option>
-                            <option value="Farm Bureau">Farm Bureau</option>
-                            <option value="Farmers Insurance">Farmers Insurance</option>
-                            <option value="Financial Indemnity">Financial Indemnity</option>
-                            <option value="GE Auto Insurance Program">GE Auto Insurance Program</option>
-                            <option value="GEICO">GEICO</option>
-                            <option value="GMAC Insurance">GMAC Insurance</option>
-                            <option value="Grange Mutual Casualty">Grange Mutual Casualty</option>
-                            <option value="Infinity Insurance">Infinity Insurance</option>
-                            <option value="Kemper">Kemper</option>
-                            <option value="Leader Insurance Company">Leader Insurance Company</option>
-                            <option value="Liberty Mutual Insurance Company">Liberty Mutual Insurance Company</option>
-                            <option value="MetLife Auto &amp; Home">MetLife Auto &amp; Home</option>
-                            <option value="National Merit Insurance">National Merit Insurance</option>
-                            <option value="Nationwide Insurance Company - Titan Indemnity">Nationwide Insurance - Titan Indem.</option>
-                            <option value="Permanent General Assurance">Permanent General Assurance</option>
-                            <option value="Phoenix Insurance">Phoenix Insurance</option>
-                            <option value="Progressive Insurance">Progressive Insurance</option>
-                            <option value="Prudential of America">Prudential of America</option>
-                            <option value="Response Insurance">Response Insurance</option>
-                            <option value="Safeco">Safeco</option>
-                            <option value="Sentry Insurance Company">Sentry Insurance Company</option>
-                            <option value="Southern General Insurance">Southern General Insurance</option>
-                            <option value="STATE FARM INS">State Farm</option>
-                            <option value="The Hartford">The Hartford</option>
-                            <option value="The Hartford AARP">The Hartford AARP</option>
-                            <option value="Travelers">Travelers</option>
-                            <option value="Unitrin Direct">Unitrin Direct</option>
-                            <option value="USAA">USAA</option>
-                            <option value="Other">Other</option>
-                        </optgroup>
-                    </select>
-                </div>
-                <div class="form__row">
-                    <h4 class="label-title">Current policy expire date</h4>
-                    <div class="column-4">
-                        <select class="form-select">
-                            <option selected>Month</option>
-                            <option>January</option>
-                            <option>February</option>
-                            <option>March</option>
-                            <option>April</option>
-                            <option>May</option>
-                            <option>June</option>
-                            <option>July</option>
-                            <option>August</option>
-                            <option>September</option>
-                            <option>October</option>
-                            <option>November</option>
-                            <option>December</option>
-                        </select>
-                    </div>
-                    <div class="column-4">
-                        <select class="form-select">
-                            <option selected>Day</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                            <option>13</option>
-                            <option>14</option>
-                            <option>15</option>
-                            <option>16</option>
-                            <option>17</option>
-                            <option>18</option>
-                            <option>19</option>
-                            <option>20</option>
-                            <option>21</option>
-                            <option>22</option>
-                            <option>23</option>
-                            <option>24</option>
-                            <option>25</option>
-                            <option>26</option>
-                            <option>27</option>
-                            <option>28</option>
-                            <option>29</option>
-                            <option>30</option>
-                            <option>31</option>
-                        </select>
-                    </div>
-                    <div class="column-4">
-                        <select class="form-select">
-                            <option selected>Year</option>
-                            <option>1971</option>
-                            <option>1972</option>
-                            <option>1973</option>
-                            <option>1974</option>
-                            <option>1975</option>
-                            <option>1976</option>
-                            <option>1977</option>
-                            <option>1978</option>
-                            <option>1979</option>
-                            <option>1980</option>
-                            <option>1981</option>
-                            <option>1982</option>
-                            <option>1983</option>
-                            <option>1984</option>
-                            <option>1985</option>
-                            <option>1986</option>
-                            <option>1987</option>
-                            <option>1988</option>
-                            <option>1989</option>
-                            <option>1990</option>
-                            <option>1991</option>
-                            <option>1992</option>
-                            <option>1993</option>
-                            <option>1994</option>
-                            <option>1995</option>
-                            <option>1996</option>
-                            <option>1997</option>
-                            <option>1998</option>
-                            <option>1999</option>
-                            <option>2000</option>
-                            <option>2001</option>
-                            <option>2002</option>
-                            <option>2003</option>
-                            <option>2004</option>
-                            <option>2005</option>
-                        </select>
+        <section class="form-box" >
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-wizard">
+					
+						<!-- Form Wizard -->
+                    	<form role="form" action="" method="post">
+
+                    		<h3>Sign Up Office Employee Account</h3>
+                    		<p>Fill all form field to go next step</p>
+							
+							<!-- Form progress -->
+                    		<div class="form-wizard-steps form-wizard-tolal-steps-3">
+                    			<div class="form-wizard-progress">
+                    			    <div class="form-wizard-progress-line" data-now-value="12.25" data-number-of-steps="4" style="width: 12.25%;"></div>
+                    			</div>
+								<!-- Step 1 -->
+                    			<div class="form-wizard-step active">
+                    				<div class="form-wizard-step-icon"><i class="bi bi-trash3-fill" aria-hidden="true"></i></div>
+                    				<p>Descrição</p>
+                    			</div>
+								<!-- Step 1 -->
+								
+								<!-- Step 2 -->
+                    			<div class="form-wizard-step">
+                    				<div class="form-wizard-step-icon"><i class="bi bi-box-fill" aria-hidden="true"></i></div>
+                    				<p>Peso</p>
+                    			</div>
+								<!-- Step 2 -->
+								
+								<!-- Step 3 -->
+								<div class="form-wizard-step">
+                    				<div class="form-wizard-step-icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i></div>
+                    				<p>Endereço</p>
+                    			</div>
+								<!-- Step 3 -->
+								
+								
+                    		</div>
+							<!-- Form progress -->
+                    		
+							
+							<!-- Form Step 1 -->
+                    		<fieldset>
+
+                    		    <h4>Agendamento:	<span>Passo 1 - 3</span></h4>
+								<div class="form-group">
+                    			    <label>Descrição: <span>*</span></label>
+                                    <input type="text" name="First Name" placeholder="Ex: Sacola de mercado com latinhas." class="form-control ">
+                                </div>
+                                <div class="form-group">
+                    			    <label>Tipo do material: <span>*</span></label>
+                                    <input type="text" name="Last Name" placeholder="Alumínio" class="form-control ">
+                                </div>
+                                <div class="form-group">
+                    			    <label>Tamanho estimado: <span>*</span></label>
+                                    <input type="text" name="Last Name" placeholder="Alumínio" class="form-control ">
+                                </div>
+								
+								<div class="container-fluid">
+								<div class="row form-inline">
+								
+								<div class="form-group col-md-3 col-xs-3">
+									<label>Dia: </label>
+                                    <select class="form-control">
+									  <option>01</option>
+									  <option>02</option>
+									  <option>03</option>
+									  <option>04</option>
+									  <option>05</option>
+									  <option>06</option>
+									  <option>07</option>
+									  <option>09</option>
+									  <option>10</option>
+									  <option>11</option>
+									  <option>12</option>
+									  <option>13</option>
+									  <option>14</option>
+									  <option>15</option>
+									  <option>16</option>
+									  <option>17</option>
+									  <option>18</option>
+									  <option>19</option>
+									  <option>20</option>
+									  <option>21</option>
+									  <option>22</option>
+									  <option>23</option>
+									  <option>24</option>
+									  <option>25</option>
+									  <option>26</option>
+									  <option>27</option>
+									  <option>28</option>
+									  <option>29</option>
+									  <option>30</option>
+									</select>
+								</div>
+								<div class="form-group col-md-3 col-xs-3">
+									<label>Mês: </label>
+                                    <select class="form-control">
+									  <option>Jan</option>
+									  <option>Fev</option>
+									  <option>Mar</option>
+									  <option>Abr</option>
+									  <option>Mai</option>
+									  <option>Jun</option>
+									  <option>Jul</option>
+									  <option>Ago</option>
+									  <option>Set</option>
+									  <option>Out</option>
+									  <option>Nov</option>
+									  <option>Dez</option>
+									</select>
+								</div>
+                                </div>
+								</div>
+                                
+                                <div class="form-wizard-buttons" style="margin-top: 1rem;">
+                                    <button type="button" class="btn btn-next">Próximo</button>
+                                </div>
+                            </fieldset>
+							<!-- Form Step 1 -->
+
+							<!-- Form Step 2 -->
+                            <fieldset>
+
+                                <h4>Peso : <span>Passo 2 - 3</span></h4>
+								
+								<div class="form-group">
+                    			    <label>Descrição do peso: </label>
+                                    <select class="form-control">
+									  <option>Mais leve que um saco de arroz de 5kg</option>
+									  <option>Mais leve que um fogão</option>
+									  <option>Mais leve que uma geladeira</option>
+									  <option>Mais pesado que uma geladeira</option>
+									</select>
+                                </div>
+								
+                                <div class="form-wizard-buttons" style="margin-top: 1rem;">
+                                    <button type="button" class="btn btn-previous">Voltar</button>
+                                    <button type="button" class="btn btn-next">Próximo</button>
+                                </div>
+                            </fieldset>
+							<!-- Form Step 2 -->
+							
+							<!-- Form Step 4 -->
+							<fieldset>
+
+                                <h4>Endereço: <span>Passo 3 - 3</span></h4>
+								<div style="clear:both;"></div>
+								<div class="form-group">
+                    			    <label>CEP: <span>*</span></label>
+                                    <input type="text" name="Bank Name" placeholder="08466-003" class="form-control">
+                                </div>
+                    			
+                                <div class="form-group">
+                    			    <label>Bairro: <span>*</span></label>
+                                    <input type="text" name="Holder Name" placeholder="Bairro" class="form-control ">
+                                </div>
+								<div class="container-fluid">
+								<div class="row form-inline">
+								<div class="form-group col-md-6 col-xs-6">
+									<label>Cidade: <span>*</span></label>
+                                    <input type="text" name="Card Number" placeholder="Cidade" class="form-control ">
+								</div>
+								<div class="form-group col-md-6 col-xs-6">
+									<label>Endereço completo: <span>*</span></label>
+                                    <input type="text" name="CVC" placeholder="Rua 424, 12" class="form-control ">
+								</div>
+								<div class="form-group col-md-6 col-xs-6">
+									<label>Complemento: <span>*</span></label>
+                                    <input type="text" name="CVC" placeholder="Rua sem saída" class="form-control ">
+								</div>
+                                </div>
+								</div>
+								<br/>
+								
+								<br/>
+                                <div class="form-wizard-buttons">
+                                    <button type="button" class="btn btn-previous">Voltar</button>
+                                    <button type="submit" class="btn btn-submit">Enviar</button>
+                                </div>
+                            </fieldset>
+							<!-- Form Step 4 -->
+                    	
+                    	</form>
+						<!-- Form Wizard -->
                     </div>
                 </div>
-                <div class="form__row">
-                    <textarea type="text" class="form-message" placeholder="List claims in past 3 years" id="address-2"></textarea>
-                </div>
-                <div class="form__row">
-                    <select class="form-select">
-                        <option selected>Coverage Level</option>
-                        <option value="1">$15,000/30,000</option>
-                        <option value="2">$20,000/40,000</option>
-                        <option value="3">$25,000/50,000</option>
-                        <option value="4">$25,000/100,000</option>
-                        <option value="5">$30,000/60,000</option>
-                        <option value="6">$50,000/100,000</option>
-                        <option value="7">$100,000/300,000</option>
-                        <option value="8">$200,000/300,000</option>
-                        <option value="9">$300,000/300,000</option>
-                        <option value="10">$250,000/500,000</option>
-                    </select>
-                </div>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="submit" name="submit" class="submit action-button" value="Submit" />
-            </fieldset>
-        </form>
+                    
+            </div>
+        </section>
     </main>
     
     <script src="assets/js/solicitacao.js"></script>
