@@ -122,6 +122,17 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
+
+.nome {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 3px;
+  color: #012970;
+}
+.logo {
+  margin-right: 6px;
+}
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;

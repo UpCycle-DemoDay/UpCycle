@@ -306,7 +306,7 @@ h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("../img/fv_backgrond.png") center  no-repeat; 
+  background: url("../../../assets/img/fv_backgrond.png") center  no-repeat; 
   background-size: cover;
   padding: 200px 0 320px 0;
   background-attachment: fixed;
