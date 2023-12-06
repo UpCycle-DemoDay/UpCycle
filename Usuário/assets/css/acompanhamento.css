@@ -286,7 +286,8 @@ header a:hover{
         height: 85vh;
     }
     .more{
-        height: 10vh;   
+        height: 10vh;
+        bottom: 4.5rem;
     }
     .more i{
         font-size: 1.5em;
@@ -294,7 +295,7 @@ header a:hover{
     }
     .perfil{
         height: 10vh;
-        bottom: 4.2rem;
+        bottom: 6rem;
     }
     .nome{
         top: 1rem;
