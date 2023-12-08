@@ -23,7 +23,6 @@ toggleClose.addEventListener('click', () => (
 /* BOTÃO DE MINIMIZAR MENU LATERAL */
 const perfil = document.getElementById('perfil');
 const home = document.getElementById('home');
-const agendamento = document.getElementById('agendamento');
 const logout = document.getElementById('logout');
 
 perfil.addEventListener('click', function alterarPerfil() {
@@ -46,329 +45,104 @@ perfil.addEventListener('click', function alterarPerfil() {
         </li>
     </ul>
     </div>
-    <div class="meta" id="meta2">
-        <h2>Voucher Spotify</h2>
-        <h3>Progresso</h3>
-        <h4>2745/3000</h4>
-        <div class="progressBar"><div class="progress"></div></div>
-    </div>
-    
-</div>
-<div class="completeHistoric">
-<h1>Histórico completo</h1>
-    <div class="cardHistoric">
-        <h4>Descarte 21</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 20</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 19</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 18</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 17</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 16</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 15</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 14</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 13</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 12</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 11</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 10</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 9</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 8</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 7</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 6</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 5</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 4</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 3</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 2</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 1</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    
-</div>
 <div class="espacamento"></div>`;
     margin.innerHTML = contentMainPerfil;
     perfil.classList.add('active')
     home.classList.remove('active')
-    agendamento.classList.remove('active')
     logout.classList.remove('active')
 })
 
 
 home.addEventListener('click', function alterarHome(){
     const contentMainHome = ` <div class="organize">
-    <div class="point">
-        <h3>Pontuação</h3>
-        <div><h2>2745</h2></div>
+    <div class="container-cards">
+                    <div class="card1">
+                        <div class="icon-card1"><i class="bi bi-wallet"></i></div>
+                        <h2>R$34,00</h2>
+                        <h4>Carteira</h4>
+                        <i class="bi bi-info-circle" id="icon-wallet"></i>
+                    </div>
+                    <div class="card2">
+                        <div class="icon-card2"><i class="bi bi-trash-fill"></i></div>
+                        <h2>21 Descartes</h2>
+                        <h4>9 para alcançar prata</h4>
+                    </div>
+                    <div class="card3">
+                        <div class="icon-card3"><img src="img/iconBlue.png"></div>
+                        <h2>89kg Reciclados</h2>
+                        <h4>Alcance 100kg para um bônus de pontos</h4>
+                    </div>
+                </div>
+                <div class="container2-cards">
+                    <div class="container2-card1">
+                        <div class="divisao-card1">
+                        <div class="text-area-card">    
+                            <div>
+                                <h2>Total arrecadado</h2>
+                                <h3>R$643,50</h3>
+                                <h4>+R$403,25</h4> <p>Nos últimos 6 meses</p>
+                            </div>
+                            <div>
+                                <div class="seeMore"><p>Ver detalhes >></p></div>
+                            </div>
+                        </div>
+                        <div class="graphic">
+                            <h5>Últimos 6 meses <i class="bi bi-caret-down-fill"></i></h5>
+                            <div class="area-graphic">
+                                <div class="column1"></div>
+                                <div class="column2"></div>
+                                <div class="column3"></div>
+                                <div class="column4"></div>
+                                <div class="column5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-area">
+                        <div class="line"></div>
+                        <p>Melhor que 39.5% dos contribuidores</p>
+                        <div class="progress-line"><div class="progress"></div></div>
+                    </div>
+                </div>
+                    <div class="container2-card2">
+                            <div class="divisao-card1">
+                            <div class="text-area-card" style="width: 40%;">    
+                                <div>
+                                    <h2>Cartão-presente</h2>
+                                    <h2>Spotify <i class="bi bi-spotify" style="color: #1ED760;"></i></h2>
+                                    <h5 style="font-weight: 100;">30 dias de premium</h5>
+                                </div>
+                                <div>
+                                    <div class="seeMore"><p>Ver mais >></p></div>
+                                </div>
+                            </div>
+                            <div class="graphic">
+                                <div class="area-graphic-circle">
+                                    <img src="./img/circle graphic.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-area">
+                           <div>
+                                <h4>Já resgatados</h4>
+                                <h3>8</h3>
+                           </div>
+                           <div>
+                                <h4>Máx. de pontos</h4>
+                                <h3>13650</h3>
+                           </div>
+                           <div>
+                                <h4>Último resgatado</h4>
+                                <h3>03/01/2024</h3>
+                           </div>
+                        </div>
+                    </div>
+                <div class="espacamento"></div>
     </div>
-    <div class="meta">
-        <h2>Voucher Spotify</h2>
-        <h3>Progresso</h3>
-        <h4>2745/3000</h4>
-        <div class="progressBar"><div class="progress"></div></div>
-    </div>
-</div>
-<div class="historico">
-    <article class="card" id="card1">
-        <h4>Descarte 21</h4>
-        <div>
-            <p>Endereço: Rua dias freire, 263</p>
-            <p>Valor: R$36,65</p>
-            <p>Data: 25/04/2024</p>
-        </div>
-        <span class="undone">Em andamento</span>
-    </article>
-    <article class="card" id="card2"><h4>Descarte 20</h4>
-        <div>
-            <p>Endereço: Rua dias freire, 263</p>
-            <p>Valor: R$24,50</p>
-            <p>Data: 05/04/2024</p>
-        </div>
-        <span class="done">Concluído</span>
-    </article>
-    <article class="card" id="card3"><h4>Descarte 19</h4>
-        <div>
-            <p>Endereço: Rua dias freire, 263</p>
-            <p>Valor: R$10,25</p>
-            <p>Data: 15/03/2024</p>
-        </div>
-        <span class="done">Concluído</span>
-    </article>
-    <article class="card" id="card4"><h4>Descarte 18</h4>
-        <div>
-            <p>Endereço: Rua dias freire, 263</p>
-            <p>Valor: R$32,45</p>
-            <p>Data: 28/02/2024</p>
-        </div>
-        <span class="done">concluído</span>
-    </article>
-</div>`;
+    `;
 
     margin.innerHTML = contentMainHome;
     perfil.classList.remove('active')
     home.classList.add('active')
-    agendamento.classList.remove('active')
-    logout.classList.remove('active')
-})
-
-agendamento.addEventListener('click', function alterarAgendamento(){
-    margin.innerHTML = contentMainAgendamento;
-    perfil.classList.remove('active')
-    home.classList.remove('active')
-    agendamento.classList.add('active')
-    logout.classList.remove('active')
-})
-
-
-trocar.addEventListener('click', function alterarTrocar(){
-    const contentMainTrocar = ``;
-    margin.innerHTML = contentMainTrocar;
-    perfil.classList.remove('active')
-    home.classList.remove('active')
-    agendamento.classList.remove('active')
     logout.classList.remove('active')
 })
 logout.addEventListener('click', function alterarLogout(){
@@ -381,7 +155,6 @@ logout.addEventListener('click', function alterarLogout(){
     margin.innerHTML = contentMainLogout;
     perfil.classList.remove('active')
     home.classList.remove('active')
-    agendamento.classList.remove('active')
     logout.classList.add('active')
 })
 
@@ -447,7 +220,6 @@ function updateContent() {
 
         const perfil2 = document.getElementById('perfil2');
         const home2 = document.getElementById('home2');
-        const agendamento2 = document.getElementById('agendamento2');
         const logout2 = document.getElementById('logout2');
 
 perfil2.addEventListener('click', function alterarPerfil2() {
@@ -470,328 +242,101 @@ perfil2.addEventListener('click', function alterarPerfil2() {
         </li>
     </ul>
     </div>
-    <div class="meta" id="meta2">
-        <h2>Voucher Spotify</h2>
-        <h3>Progresso</h3>
-        <h4>2745/3000</h4>
-        <div class="progressBar"><div class="progress"></div></div>
-    </div>
-    
-</div>
-<div class="completeHistoric">
-<h1>Histórico completo</h1>
-    <div class="cardHistoric">
-        <h4>Descarte 21</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 20</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 19</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 18</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 17</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 16</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 15</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 14</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 13</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 12</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 11</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 10</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 9</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 8</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 7</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 6</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 5</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 4</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 3</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 2</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    <div class="cardHistoric">
-        <h4>Descarte 1</h4>
-        <div class="elementHistoric">
-            <div>
-                <p>Endereço: Rua dias freire, 263</p>
-                <p>Valor: R$36,65</p>
-                <p>Data: 25/04/2024</p>
-            </div>
-            <span class="undone">Em andamento</span>
-        </div>
-    </div>
-    
-</div>
 <div class="espacamento"></div>`;
     margin.innerHTML = contentMainPerfil2;
     perfil2.classList.add('active-icon')
     home2.classList.remove('active-icon')
-    agendamento2.classList.remove('active-icon')
     logout2.classList.remove('active-icon')
 })
 home2.addEventListener('click', function alterarHome2(){
     const contentMainHome2 = ` <div class="organize">
-    <div class="point">
-        <h3>Pontuação</h3>
-        <div><h2>2745</h2></div>
-    </div>
-    <div class="meta">
-        <h2>Voucher Spotify</h2>
-        <h3>Progresso</h3>
-        <h4>2745/3000</h4>
-        <div class="progressBar"><div class="progress"></div></div>
-    </div>
-</div>
-<div class="historico">
-    <article class="card" id="card1">
-        <h4>Descarte 21</h4>
-        <div>
-            <p>Endereço: Rua dias freire, 263</p>
-            <p>Valor: R$36,65</p>
-            <p>Data: 25/04/2024</p>
-        </div>
-        <span class="undone">Em andamento</span>
-    </article>
-    <article class="card" id="card2"><h4>Descarte 20</h4>
-        <div>
-            <p>Endereço: Rua dias freire, 263</p>
-            <p>Valor: R$24,50</p>
-            <p>Data: 05/04/2024</p>
-        </div>
-        <span class="done">Concluído</span>
-    </article>
-    <article class="card" id="card3"><h4>Descarte 19</h4>
-        <div>
-            <p>Endereço: Rua dias freire, 263</p>
-            <p>Valor: R$10,25</p>
-            <p>Data: 15/03/2024</p>
-        </div>
-        <span class="done">Concluído</span>
-    </article>
-    <article class="card" id="card4"><h4>Descarte 18</h4>
-        <div>
-            <p>Endereço: Rua dias freire, 263</p>
-            <p>Valor: R$32,45</p>
-            <p>Data: 28/02/2024</p>
-        </div>
-        <span class="done">concluído</span>
-    </article>
-</div>`;
+    <div class="container-cards">
+                    <div class="card1">
+                        <div class="icon-card1"><i class="bi bi-wallet"></i></div>
+                        <h2>R$34,00</h2>
+                        <h4>Carteira</h4>
+                        <i class="bi bi-info-circle" id="icon-wallet"></i>
+                    </div>
+                    <div class="card2">
+                        <div class="icon-card2"><i class="bi bi-trash-fill"></i></div>
+                        <h2>21 Descartes</h2>
+                        <h4>9 para alcançar prata</h4>
+                    </div>
+                    <div class="card3">
+                        <div class="icon-card3"><img src="img/iconBlue.png"></div>
+                        <h2>89kg Reciclados</h2>
+                        <h4>Alcance 100kg para um bônus de pontos</h4>
+                    </div>
+                </div>
+                <div class="container2-cards">
+                    <div class="container2-card1">
+                        <div class="divisao-card1">
+                        <div class="text-area-card">    
+                            <div>
+                                <h2>Total arrecadado</h2>
+                                <h3>R$643,50</h3>
+                                <h4>+R$403,25</h4> <p>Nos últimos 6 meses</p>
+                            </div>
+                            <div>
+                                <div class="seeMore"><p>Ver detalhes >></p></div>
+                            </div>
+                        </div>
+                        <div class="graphic">
+                            <h5>Últimos 6 meses <i class="bi bi-caret-down-fill"></i></h5>
+                            <div class="area-graphic">
+                                <div class="column1"></div>
+                                <div class="column2"></div>
+                                <div class="column3"></div>
+                                <div class="column4"></div>
+                                <div class="column5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-area">
+                        <div class="line"></div>
+                        <p>Melhor que 39.5% dos contribuidores</p>
+                        <div class="progress-line"><div class="progress"></div></div>
+                    </div>
+                </div>
+                    <div class="container2-card2">
+                            <div class="divisao-card1">
+                            <div class="text-area-card" style="width: 40%;">    
+                                <div>
+                                    <h2>Cartão-presente</h2>
+                                    <h2>Spotify <i class="bi bi-spotify" style="color: #1ED760;"></i></h2>
+                                    <h5 style="font-weight: 100;">30 dias de premium</h5>
+                                </div>
+                                <div>
+                                    <div class="seeMore"><p>Ver mais >></p></div>
+                                </div>
+                            </div>
+                            <div class="graphic">
+                                <div class="area-graphic-circle">
+                                    <img src="./img/circle graphic.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-area">
+                           <div>
+                                <h4>Já resgatados</h4>
+                                <h3>8</h3>
+                           </div>
+                           <div>
+                                <h4>Máx. de pontos</h4>
+                                <h3>13650</h3>
+                           </div>
+                           <div>
+                                <h4>Último resgatado</h4>
+                                <h3>03/01/2024</h3>
+                           </div>
+                        </div>
+                    </div>
+                <div class="espacamento"></div>
+    </div>`;
 
     margin.innerHTML = contentMainHome2;
     perfil2.classList.remove('active-icon')
     home2.classList.add('active-icon')
-    agendamento2.classList.remove('active-icon')
-    logout2.classList.remove('active-icon')
-})
-
-agendamento2.addEventListener('click', function alterarAgendamento2(){
-    margin.innerHTML = contentMainAgendamento2;
-    perfil2.classList.remove('active-icon')
-    home2.classList.remove('active-icon')
-    agendamento2.classList.add('active-icon')
-    logout2.classList.remove('active-icon')
-
-
-})
-
-trocar2.addEventListener('click', function alterarTrocar2(){
-    const contentMainTrocar2 = ``;
-    margin.innerHTML = contentMainTrocar2;
-    perfil2.classList.remove('active-icon')
-    home2.classList.remove('active-icon')
-    agendamento2.classList.remove('active-icon')
     logout2.classList.remove('active-icon')
 })
 logout2.addEventListener('click', function alterarLogout2(){
@@ -804,7 +349,6 @@ logout2.addEventListener('click', function alterarLogout2(){
     margin.innerHTML = contentMainLogout2;
     perfil2.classList.remove('active-icon')
     home2.classList.remove('active-icon')
-    agendamento2.classList.remove('active-icon')
     logout2.classList.add('active-icon')
 })
 
