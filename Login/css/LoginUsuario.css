@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--azul-variante01);
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --azul-claro: #28BCFC;
+    --azul-variante01:#F8FDFF;
+    --azul-escuro: #001E88;
+    --verde-claro: #26d64c;
+}
+
+.header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.header .link-arrow{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.header .link-arrow img{
+    width: 30px;
+    height: 30px;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    /*border: solid black;*/
+    padding: 50px 0px;
+}
+
+.logo-azul{
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+}
+
+.logo-azul img{
+    width: 100%;
+    height: 100%;
+}
+
+.title-form{
+    line-height: 50px;
+}
+
+.container-main h1{
+    color: var(--azul-claro);
+    font-weight: 450;
+    font-size: 30px;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+   /* border: solid red;*/
+}
+
+#login-form .item-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+#login-form .item-form label{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--verde-claro);
+}
+
+#login-form .item-form input{
+    width: 600px;
+    height: 45px;
+    font-size: 18px;
+    padding: 20px;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid var(--azul-claro);
+}
+
+#login-form button{
+    width: 600px;
+    height: 45px;
+    background: var(--verde-claro);
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+#login-form button:hover{
+    border: 2px solid var(--azul-escuro);
+    background: var(--azul-variante01);
+    color: var(--verde-claro);
+    cursor: pointer;
+}
+
+.link-cadastrese a{
+    font-weight: 500;
+    color: var(--azul-escuro);
+    transition: all 0.3s ease-in-out;
+}
+
+.link-cadastrese a:hover{
+    font-weight: 500;
+    color: var(--azul-claro);
+}
+

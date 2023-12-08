@@ -1,0 +1,90 @@
+@media (max-width: 1049px){  
+
+    .container-form{
+        gap: 0px; 
+    }
+
+    .form{
+        width: 600px;
+    }
+
+    .item-form input, button{
+        width: 550px;
+    }
+
+    .termoPrivacidade{
+        display: none;
+        width: 550px;
+    }
+
+    .showScience {
+        display: block;
+    }
+}
+
+@media (max-width: 680px){  
+
+    .form{
+        width: 500px;
+    }
+
+    .item-form input, button{
+        width: 450px;
+    }
+
+    .termoPrivacidade{
+        width: 450px;
+    }
+}
+
+@media (max-width: 560px){  
+
+    .form{
+        width: 450px;
+    }
+
+    .item-form input, button{
+        width: 400px;
+    }
+
+    .termoPrivacidade{
+        width: 400px;
+    }
+}
+
+@media (max-width: 499px){  
+
+    .form{
+        width: 400px;
+    }
+
+    .item-form input, button{
+        width: 350px;
+    }
+
+    .termoPrivacidade{
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 446px){  
+
+    .form{
+        width: 300px;
+    }
+
+    .item-form input, button{
+        width: 280px;
+    }
+
+    .termoPrivacidade{
+        display: none;
+        width: 280px;
+        font-size: 14px;
+    }
+
+    .showScience {
+        display: block;
+    }
+}

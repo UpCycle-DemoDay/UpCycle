@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logoPNG.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/CadastroFerrovelho.css">
+    <link rel="stylesheet" href="css/CadastroFerResponsivo.css">
+
+    <title>Cadastro Usuário Ferro-Velho</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="link-arrow">
+            <div>
+                <img src="img/arrow.png" alt="Seta para voltar à página anterior">
+            </div>
+        </a>
+    </header>
+
+    <main class="container-main">
+        <div class="logo-azul">
+            <img src="img/logo-azul.svg" alt="Logo Upcycle">
+        </div>
+        <div class="title-form">
+            <h1>Cadastro Ferro-velho</h1>
+            <p><span class="passos-cadastro">Passo 1 de 2</span></p>
+        </div>
+        <form action="javascript:void(0);" class="container-form" id="registro-form">
+                <div class="form form-left">
+                    <div class="item-form">
+                        <label for="nomeFr">Nome do Estabelecimento</label>
+                        <input type="text" name="nomefr" id="nomefr" required placeholder="Nome do estabelecimento">
+                    </div>
+                    <div class="item-form">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" id="cnpj" name="cnpj" required placeholder="00.000.000/0000-00" oninput="formatarCNPJ(this)">
+                    </div>
+                    <div class="item-form">
+                        <label for="telefoneFr">Telefone</label>
+                        <input type="text" name="telefoneFr" id="telefoneFr" required placeholder="(11) 99999-9999" oninput="formatarTelefone(this)">
+                    </div>
+                    <div class="item-form">
+                        <label for="emailFr">E-mail</label>
+                        <input type="email" name="emailFr" id="emailFr" required placeholder="exemplo@gmail.com">
+                    </div>
+                    <div class="termoPrivacidade">
+                        <input type="checkbox" name="concordo1" value="1">
+                        <label>
+                            Concordo com os
+                            <a href="../TermoPolitica/termousoferrovelho.html"> <span>Termos de Uso</span></a>
+                        </label>
+                    </div>
+                    <div class="termoPrivacidade">
+                        <input type="checkbox" name="concordo2" value="2">
+                        <label>
+                            Concordo com a 
+                            <a href="../TermoPolitica/politicaprivacidadeferrovelho.html"><span>Política de Privacidade</span></a>
+                        </label>
+                    </div>
+                </div>
+                <div class="form form-right">
+                    <div class="item-form">
+                        <label for="senhaUser">Senha</label>
+                        <input type="password" name="senhaUser" id="senhaUser" required placeholder="Digite sua senha">
+                    </div>
+                    <div class="item-form">
+                        <label for="confirma">Confirmar senha</label>
+                        <input type="password" name="confirma" id="confirma" required placeholder="Digite sua senha novamente">
+                    </div>
+
+                    <div class="container-materiais">
+                        <label for="materiais" class="title-materiais">Materiais Aceitos</label>
+                        <div class="form-materiais">
+                            <div class="item-material">
+                                <div class="item">
+                                    <input type="checkbox" name="material01">
+                                    <label>
+                                        Plástico
+                                    </label>
+                                </div>
+                                <div class="item">
+                                    <input type="checkbox" name="material01">
+                                    <label>
+                                        Alumínio
+                                    </label>
+                                </div>
+                                <div class="item">
+                                    <input type="checkbox" name="material01">
+                                    <label>
+                                        Vídro
+                                    </label>
+                                </div>
+                                <div class="item">
+                                    <input type="checkbox" name="material01">
+                                    <label>
+                                        Papel
+                                    </label>
+                                </div>
+                            </div>
+                       
+                            <div class="item-material">
+                                <div class="item">
+                                    <input type="checkbox" name="material01">
+                                    <label>
+                                    Papelão
+                                    </label>
+                                </div>
+                                <div class="item">
+                                    <input type="checkbox" name="material01">
+                                    <label>
+                                        Metais
+                                    </label>
+                                </div>
+                                <div class="item">
+                                    <input type="checkbox" name="material01">
+                                    <label>
+                                    Outros
+                                    </label>
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="item-form">
+                            <textarea id="especificacao-materiais" placeholder='Caso tenha escolhido "outros", especifique.'  class="textarea"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="showScience termoPrivacidade">
+                        <input type="checkbox" name="concordo3" value="3">
+                        <label>
+                            Concordo com os
+                            <a href="../TermoPolitica/termousoferrovelho.html"> <span>Termos de Uso</span></a>
+                        </label>
+                    </div>
+                    <div class="showScience termoPrivacidade">
+                        <input type="checkbox" name="concordo4" value="4">
+                        <label>
+                            Concordo com a 
+                            <a href="../TermoPolitica/politicaprivacidadeferrovelho.html"><span>Política de Privacidade</span></a>
+                        </label>
+                    </div>
+
+                    <div class="button button-continuar">
+                        <button type="submit" onclick="segundaEtapa()">Continuar</button>
+                    </div> 
+                </div>
+        </form>
+    </main>
+
+    <script src="js/cadastroferrovelho.js"></script>
+</body>
+</html>
