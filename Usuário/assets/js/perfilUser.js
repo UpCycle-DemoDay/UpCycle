@@ -2,6 +2,7 @@ const toggleClose = document.querySelector('.toggle-icon')
 const sidebar = document.querySelector('.sidebar')
 const textLogo = document.querySelector('.text-logo')
 const margin = document.getElementById('marginMain')
+
 /* BOTÃO DE MINIMIZAR MENU LATERAL */
 toggleClose.addEventListener('click', () => (
     sidebar.classList.toggle('close')
@@ -23,7 +24,6 @@ toggleClose.addEventListener('click', () => (
 const perfil = document.getElementById('perfil');
 const home = document.getElementById('home');
 const agendamento = document.getElementById('agendamento');
-
 const logout = document.getElementById('logout');
 
 perfil.addEventListener('click', function alterarPerfil() {
@@ -296,6 +296,8 @@ perfil.addEventListener('click', function alterarPerfil() {
     agendamento.classList.remove('active')
     logout.classList.remove('active')
 })
+
+
 home.addEventListener('click', function alterarHome(){
     const contentMainHome = ` <div class="organize">
     <div class="point">
