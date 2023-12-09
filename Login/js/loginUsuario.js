@@ -20,7 +20,7 @@ document.getElementById("login-form").addEventListener("submit", (event) =>{
 
     .then(response => {
         if(response.ok){
-            alert("Usuario logado com Sucesso!");
+            /*alert("Usuário logado com Sucesso!");*/
             window.location.href = '../Usuário/perfilUser.html';
         } else {
             alert("Credenciais Inválidas");

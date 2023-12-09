@@ -52,8 +52,8 @@ document.getElementById("registro-form").addEventListener("submit", function (ev
     const senha = document.getElementById("senhaUser").value;
     const confirmarSenha = document.getElementById("confirma").value;
     
-    if(senha.length < 8){
-        alert("A senha deve ter mais de 8 dígitos");
+    if(senha.length < 7){
+        alert("A senha deve ter mais de 7 dígitos");
 
     } else if(senha !== confirmarSenha){
         alert("Senhas não Coincidem");
@@ -78,9 +78,9 @@ document.getElementById("registro-form").addEventListener("submit", function (ev
         .then(response => {
             if(response.ok){
                 /*É direcionado para a segunda etapa*/
-                window.location.href = 'CadastroUsuario02.html';
+                window.location.href = 'cadastrousuario02.html';
             } else {
-                console.log("Erro desconhecido ao criar usuário");
+                console.log("Erro desconhecido ao criar novo usuário.");
             }
         })
         .catch(error => {
