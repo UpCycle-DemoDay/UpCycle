@@ -401,6 +401,7 @@ body{
     justify-content: space-between;
     padding: 1.5rem;
     margin-left: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
 }
 .points div{
     display: flex;
@@ -438,6 +439,7 @@ body{
     margin: 2rem auto;
     background-color: #fff;
     padding: 1.5rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
 }
 .carteira .title-wallet{
     display: flex;
