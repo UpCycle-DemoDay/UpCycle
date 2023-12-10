@@ -320,25 +320,122 @@ function updateContent() {
         const logout2 = document.getElementById('logout2');
 
 perfil2.addEventListener('click', function alterarPerfil2() {
-    const contentMainPerfil2 = `<div class="organize" id="wrap">
+    const contentMainPerfil2 = `<div class="organize" id="wrap" style="flex-direction: row; justify-content: space-between;">
     <div class="user-profile">
         <img class="avatar" src="img/user.jpg" alt="Ash" />
         <div class="username">Júlia Silva</div>
-    <div class="bio">
-        contribuidor(a) bronze
-    </div>
+        <div class="bio">
+            contribuidor(a) bronze
+        </div>
         <div class="description">
-        Buscando acabar com a ebulição global!
+            Buscando acabar com a ebulição global!
+        </div>
+        <ul class="data">
+            <li>
+            <span class="entypo-heart">Descartes: 21</span>
+            </li>
+            <li>
+            <span class="entypo-eye">próximo rank: 9</span>
+            </li>
+        </ul>
     </div>
-    <ul class="data">
-        <li>
-        <span class="entypo-heart">Descartes: 21</span>
-        </li>
-        <li>
-        <span class="entypo-eye">próximo rank: 9</span>
-        </li>
-    </ul>
+    <div class="points">
+        <div>
+            <h2>Pontuação</h2>
+            <h1>2650</h1>
+        </div>
+        <div style="align-items: center;">
+            <img src="img/medal.png">
+            <a href="../pagbonificação/bonificacao.html">Trocar pontos</a>
+        </div>
     </div>
+</div>
+
+
+
+<!--Estrutura da carteira-->
+
+<div class="carteira">
+    <div class="title-wallet">
+        <h2>CARTEIRA</h2>
+        <i class="bi bi-wallet"></i>
+    </div>
+    <div class="saldo-saque">
+        <div class="saldo">
+            <h5>Saldo disponível para saque</h5>
+            <h1>R$54,50</h1>
+        </div>
+        <div class="saque">
+            <span>Saque</span>
+        </div>
+    </div>
+    <h4 style="margin: 1rem 0; font-size: 1.5em;">Janeiro</h4>
+    <div class="card-wallet">
+        <div style="display: flex;">
+            <div class="date">
+                <h2>19</h2>
+                <h4>Hoje</h4>
+            </div>
+            <div class="desc-card-wallet">
+                <i class="bi bi-coin"></i>
+                <div class="title-date"><h4>Saque</h4><p>19/12/2023</p></div>
+            </div>
+        </div>
+        <h2 id="valor" style="margin: auto 0; color: red;">-R$20,00</h2>
+    </div>
+    <div class="card-wallet">
+        <div style="display: flex;">
+            <div class="date">
+                <h2>2</h2>
+                <h4>3 sem atrás</h4>
+            </div>
+            <div class="desc-card-wallet">
+                <i class="bi bi-coin"></i>
+                <div class="title-date"><h4>Descarte</h4><p>2/12/2023</p></div>
+            </div>
+        </div>
+        <h2 id="valor" style="margin: auto 0; color: #26D64C;">+R$31,25</h2>
+    </div>
+    <div class="card-wallet">
+        <div style="display: flex;">
+            <div class="date">
+                <h2>21</h2>
+                <h4>mês passado</h4>
+            </div>
+            <div class="desc-card-wallet">
+                <i class="bi bi-coin"></i>
+                <div class="title-date"><h4>Descarte</h4><p>21/11/2023</p></div>
+            </div>
+        </div>
+        <h2 id="valor" style="margin: auto 0; color: #26D64C;">+R$10,50</h2>
+    </div>
+    <div class="card-wallet">
+        <div style="display: flex;">
+            <div class="date">
+                <h2>17</h2>
+                <h4>mês passado</h4>
+            </div>
+            <div class="desc-card-wallet">
+                <i class="bi bi-coin"></i>
+                <div class="title-date"><h4>Saque</h4><p>17/11/2023</p></div>
+            </div>
+        </div>
+        <h2 id="valor" style="margin: auto 0; color: red;">-R$50,00</h2>
+    </div>
+    <div class="card-wallet">
+        <div style="display: flex;">
+            <div class="date">
+                <h2>3</h2>
+                <h4>mês passado</h4>
+            </div>
+            <div class="desc-card-wallet">
+                <i class="bi bi-coin"></i>
+                <div class="title-date"><h4>Descarte</h4><p>3/11/2023</p></div>
+            </div>
+        </div>
+        <h2 id="valor" style="margin: auto 0; color: #26D64C;">+R$41,20</h2>
+    </div>
+</div>
 <div class="espacamento"></div>`;
     margin.innerHTML = contentMainPerfil2;
     perfil2.classList.add('active-icon')
