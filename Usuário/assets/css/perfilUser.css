@@ -391,6 +391,155 @@ body{
 .desc-area h3{
     font-weight: 100;
 }
+.points{
+    width: 700px;
+    height: 231px;
+    background: url(../../img/points-bg.png) no-repeat center;
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin-left: 1rem;
+}
+.points div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.points h2{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 500;
+}
+.points h1{
+    color: #fff;
+    font-size: 5em;
+    font-weight: 900;
+}
+.points img{
+    max-width: 80px;
+}
+.points a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 150px;
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 4px;
+}
+.carteira{
+    width: 100%;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 1.5rem;
+}
+.carteira .title-wallet{
+    display: flex;
+    width: 185px;
+    justify-content: space-evenly;
+    align-items: center;
+    letter-spacing: 4px;
+}
+.carteira .title-wallet i{
+    font-size:  1.3em;
+}
+.carteira .saldo-saque{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.carteira .saldo-saque .saldo{
+    width: 65%;
+    background: linear-gradient(90deg, #11998E 0%, #38EF7D 100%);
+    height: 160px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1.825rem;
+    color: #fff;
+}
+.carteira .saldo-saque .saldo h1{
+    font-size: 3.5em;
+}
+.carteira .saldo-saque .saque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+.carteira .saldo-saque .saque span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #00F260;
+    padding: .5rem 2rem;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 2rem;
+}
+.card-wallet{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 140px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 15.9px -5px rgba(0, 0, 0, 0.21);
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 0;
+    margin-top: 1rem;
+}
+.card-wallet .date{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 120px;
+    border-right: 2px solid #b9b9b9;
+    color: #949494;
+}
+.card-wallet .desc-card-wallet{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+.card-wallet .desc-card-wallet i{
+    font-size: 4em;
+    color: #949494;
+}
+.card-wallet .desc-card-wallet .title-date{
+    margin-left: 1rem;
+    color: #949494;
+}
+.card-wallet .desc-card-wallet .title-date h4{
+    font-size: 2em;
+}
+@media screen and (max-width:880px) {
+    .card-wallet .desc-card-wallet i{
+        font-size: 2.5em;
+    }
+    .card-wallet .desc-card-wallet .title-date h4{
+        font-size: 1.3em;
+    }
+    .card-wallet .desc-card-wallet .title-date p{
+        font-size: .6em;
+    }
+    #valor{
+        font-size: 1em;
+    }
+}
 @media screen and (max-width: 920px){
     .card1 h2,
     .card2 h2,
@@ -437,6 +586,12 @@ body{
     .desc-area{
         height:50px;
     }
+    .points{
+        margin: 0;
+    }
+    .card-wallet{
+        height: 90px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -451,6 +606,19 @@ body{
     }
     .area-graphic-circle img{
         margin-left: 0;
+    }
+    .points h2{
+        font-size: 1.5em;
+    }
+    .points h1{
+        font-size: 2em;
+    }
+    .points img{
+        max-width: 50px;
+    }
+    .points a{
+        width: 100px;
+        font-size: .8em;
     }
 }
 @media screen and (max-width:450px){
@@ -467,6 +635,32 @@ body{
     }
     .desc-area{
         height: 90px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .carteira .saldo-saque .saldo h5{
+        font-size: .6em
+    }
+    .carteira .saldo-saque .saldo h1{
+        font-size: 2em;
+    }
+    .carteira .saldo-saque .saque span{
+        font-size: .7em;
+        padding: .5rem 1.5rem;
+    }
+    .card-wallet .date{
+        width: 70px;
+        font-size: .7em;
+        padding: 0 .5rem;
+    }
+    .card-wallet .desc-card-wallet{
+        margin-left: .5rem;
+    }
+    .card-wallet .desc-card-wallet .title-date{
+        margin-left: .5rem;
+    }
+    .card-wallet .desc-card-wallet .title-date h4{
+        font-size: .9em;
     }
 }
 @media screen and (max-width: 400px) {
@@ -486,6 +680,25 @@ body{
         width: 170px;
         height: 170px;
         margin-top: 2rem;
+    }
+    #valor{
+        font-size: .7em;
+    }
+    .carteira .saldo-saque .saldo{
+        padding: .5rem;
+        justify-content: center;
+    }
+    .carteira .saldo-saque .saldo h1{
+        font-size: 1.3em;
+    }
+    .carteira .desc-card-wallet i{
+        font-size: 1.4em;
+    }
+    .card-wallet .desc-card-wallet .title-date h4{
+        font-size: .7em;
+    }
+    .card-wallet .desc-card-wallet .title-date p{
+        font-size: .5em;
     }
 }
 /* PERFIL */
