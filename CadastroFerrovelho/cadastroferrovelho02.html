@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logoPNG.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/CadastroFerrovelho.css">
+    <link rel="stylesheet" href="css/CadastroFerResponsivo.css">
+    <title>Cadastro Usuário Ferro-Velho</title>
+</head>
+<body>
+    <header class="header">
+        <a href="cadastroferrovelho.html" class="link-arrow">
+            <div>
+                <img src="img/arrow.png" alt="Seta para voltar à página anterior">
+            </div>
+        </a>
+    </header>
+
+    <main class="container-main">
+        <div class="logo-azul">
+            <img src="img/logo-azul.svg" alt="Logo Upcycle">
+        </div>
+        <div class="title-form">
+            <h1>Cadastro Ferro-velho</h1>
+            <p><span class="passos-cadastro">Passo 2 de 2</span></p>
+        </div>
+        <form action="javascript:void(0);" class="container-form" id="form-endereco">
+                <div class="form form-left">
+                    <div class="item-form">
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" id="rua" required placeholder="Digite o nome da rua">
+                    </div>
+                    <div class="item-form">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro" id="bairro" required placeholder="Digite o nome do bairro">
+                    </div>
+                    <div class="item-form">
+                        <label for="numero">N°</label>
+                        <input type="text" name="numero" id="numero" required placeholder="123">
+                    </div>
+                    <div class="item-form">
+                        <label for="cep">CEP</label>
+                        <input type="text" name="cep" id="cep" required placeholder="00000-00">
+                    </div>
+                </div>
+                <div class="form form-right">
+                    <div class="item-form">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" required placeholder="Cidade">
+                    </div>
+                    <div class="item-form">
+                        <label for="estado">Estado</label>
+                        <input type="text" name="estado" id="estado" required placeholder="Estado">
+                    </div>
+                    <div class="item-form">
+                        <label for="uf">UF</label>
+                        <input type="text" name="uf" id="uf" required placeholder="UF">
+                    </div>
+                    <div class="item-form">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" name="complemento" id="complemento" placeholder="Complemento">
+                    </div>
+
+                    <div class="button">
+                        <button type="submit" onclick="redirecionaIndex()">Finalizar</button>
+                    </div>
+                </div>
+            </form>
+    </main>
+
+    <script src="js/cadastroferrovelho.js"></script>
+</body>
+</html>

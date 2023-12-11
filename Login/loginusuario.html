@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logoPNG.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/LoginUsuario.css">
+    <link rel="stylesheet" href="css/LoginResponsivo.css">
+   
+    <title>UpCycle</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="link-arrow">
+            <div>
+                <img src="img/arrow.png" alt="">
+            </div>
+        </a>
+    </header>
+
+    <main class="container-main">
+        <div class="logo-azul">
+            <img src="img/logo-azul.svg" alt="">
+        </div>
+        <div class="title-form">
+            <h1>Login Usuário</h1>
+        </div>
+
+        <form action="javascript:void(0);" id="login-form">
+            <div class="item-form">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Digite o seu e-mail">
+            </div>
+            <div class="item-form">
+                <label for="senhaLog">Senha</label>
+                <input type="password" id="senhaLog" name="senhaLog" required placeholder="Digite a sua senha">
+            </div>
+            <div>
+                <button type="submit">Entrar</button>
+            </div>
+            <div>
+                <p>Ainda não tem cadastro? <span class="link-cadastrese"><a href="../CadastroUsuario/CadastroUsuario.html">Cadastre-se</a></span></p>
+            </div>
+        </form>
+    </main>
+
+    <script src="js/loginUsuario.js"></script>
+</body>
+</html>

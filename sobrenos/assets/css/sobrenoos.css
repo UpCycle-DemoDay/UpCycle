@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root{
+    --azul-claro: #28BCFC;
+    --azul-variante01:#F8FDFF;
+    --azul-escuro: #001E88;
+    --verde-claro: #26d64c;
+    --verde-variante01:  #26d64c39;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--azul-escuro);
+    padding-bottom: 30px;
+}
+
+.contaner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.contaner-text h1{
+    font-size: 135px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: rgb(0, 255, 60);
+}
+
+.container-paragrafo{
+    width: 900px;
+}
+
+.contaner-text p{
+    font-size: 30px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    color: var(--azul-escuro);
+}
+
+.container-principios{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-principios{
+    width: 430px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-principios h3{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--azul-claro);
+}
+
+.item-principios img{
+    width: 130px; 
+    height: 130px;
+    padding-top: 20px;
+}
+
+.item-principios p{
+    width: 400px;
+    font-size: 19px; 
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+
+.container-futuro{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item-futuro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    /*border: solid red;*/
+}
+
+.item-futuro h3{
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--azul-claro);
+    padding-bottom: 50px;
+}
+
+.item-futuro img{
+    width: 350px;
+    height: 350px;
+
+}
+
+@media (max-width:900px){
+
+    h2{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    .contaner-text{
+        padding-top: 0px;
+    }
+
+    .contaner-text h1{
+        font-size: 130px;
+    }    
+
+    .container-paragrafo{
+        width: 800px;
+    }
+
+    .item-principios{
+        width: 400px; 
+    }
+    
+    .item-principios h3{
+        font-size: 27px;
+    }
+    
+    .item-principios img{
+        width: 100px; 
+        height: 100px;
+        padding-top: 20px;
+    }
+    
+    .item-principios p{
+        font-size: 18px; 
+        margin-top: 20px;
+    }
+
+    .item-futuro h3{
+        font-size: 27px;
+     
+    }
+}
+
+@media (max-width:780px){
+
+    .contaner-text h1{
+        font-size: 110px;
+    }    
+
+    .container-paragrafo{
+        width: 700px;
+    }
+
+    .contaner-text p{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 677px){
+    .container-paragrafo{
+        width: 600px;
+    }  
+}
+
+@media (max-width: 583px){
+    .contaner-text h1{
+        font-size: 100px;
+    }    
+
+    .container-paragrafo{
+        width: 500px;
+    }  
+}
+
+@media (max-width: 495px){
+    .contaner-text h1{
+        font-size: 80px;
+    }    
+
+    .container-paragrafo{
+        width: 400px;
+    }  
+}
+
+@media (max-width: 410px){
+    .contaner-text h1{
+        font-size: 70px;
+    }    
+
+    .container-paragrafo{
+        width: 350px;
+    }  
+
+    .item-principios p{
+        width: 350px; 
+        font-size: 16px; 
+        margin-top: 20px;
+    }
+    
+    .item-principios img{
+        width: 100px; 
+        height: 100px;
+        padding-top: 0px;
+    } 
+    
+    .item-futuro h3{
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+   .img-responsi img{
+        width: 300px;
+   }
+}
+
+@media (max-width: 355px){
+ 
+    .contaner-text h1{
+        font-size: 60px;
+    }    
+
+    .container-paragrafo{
+        width: 320px;
+    }  
+
+    .item-principios p{
+        width: 300px; 
+        font-size: 16px; 
+        margin-top: 20px;
+    }
+    
+   .img-responsi img{
+        width: 285px;
+   }
+
+   .img-responsi02 img{
+    width: 285px;
+   }
+}
