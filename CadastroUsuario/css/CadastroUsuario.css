@@ -17,21 +17,14 @@
     --verde-claro: #26d64c;
 }
 
-.header{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-}
 
-.header .link-arrow{
-    display: flex;
-    gap: 5px;
-}
 
 .header .link-arrow img{
     width: 30px;
     height: 30px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 }
 
 .container-main{
