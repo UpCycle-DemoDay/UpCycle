@@ -85,7 +85,6 @@ h2{
     justify-content:space-evenly;
     flex-wrap: wrap;
     gap: 30px;
-
 }
 
 .item-futuro{
@@ -93,9 +92,9 @@ h2{
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background: var(--verde-variante01);
     padding: 10px;
     width: 400px;
+    /*border: solid red;*/
 }
 
 .item-futuro h3{
@@ -106,7 +105,11 @@ h2{
     padding-bottom: 50px;
 }
 
+.item-futuro img{
+    width: 350px;
+    height: 350px;
 
+}
 
 @media (max-width:900px){
 
