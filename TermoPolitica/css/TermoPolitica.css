@@ -1,80 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: var(--azul-variante01);
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--azul-variante01);
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 
-:root{
-    --azul-claro: #28BCFC;
-    --azul-variante01:#F8FDFF;
-    --azul-escuro: #001E88;
-    --verde-claro: #26d64c;
+:root {
+  --azul-claro: #28bcfc;
+  --azul-variante01: #f8fdff;
+  --azul-escuro: #001e88;
+  --verde-claro: #26d64c;
 }
 
-.header{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
 }
 
-.header .link-arrow img{
-    width: 30px;
-    height: 30px;
+.header .link-arrow img {
+  width: 30px;
+  height: 30px;
 }
 
-span{
-    font-weight: 700;
-    color: var(--verde-claro);
+span {
+  font-weight: 700;
+  color: var(--verde-claro);
 }
 
-h1{
-    font-size: 30px;
-    color: var(--azul-escuro);
+h1 {
+  font-size: 30px;
+  color: var(--azul-escuro);
 }
 
-.container-conteudo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.container-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.logo-azul img{
-    width: 100px;
+.logo-azul img {
+  width: 100px;
 }
 
-.container-paragrafos{
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-   
+.container-paragrafos {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.container-paragrafos p{
-    width: 100%;
-    text-align: justify;
-    font-size: 20px;
+.container-paragrafos p {
+  width: 100%;
+  text-align: justify;
+  font-size: 20px;
 }
 
-.item-conteudo{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.item-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.item-conteudo h3{
-    font-size: 21px;
-    color: var(--azul-escuro);
+.item-conteudo h3 {
+  font-size: 21px;
+  color: var(--azul-escuro);
 }
-
-
-
-

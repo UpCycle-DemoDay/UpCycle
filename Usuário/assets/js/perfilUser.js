@@ -1,32 +1,30 @@
-const toggleClose = document.querySelector('.toggle-icon')
-const sidebar = document.querySelector('.sidebar')
-const textLogo = document.querySelector('.text-logo')
-const margin = document.getElementById('marginMain')
+const toggleClose = document.querySelector(".toggle-icon");
+const sidebar = document.querySelector(".sidebar");
+const textLogo = document.querySelector(".text-logo");
+const margin = document.getElementById("marginMain");
 
 /* BOTÃO DE MINIMIZAR MENU LATERAL */
-toggleClose.addEventListener('click', () => (
-    sidebar.classList.toggle('close')
-))
-toggleClose.addEventListener('click', () => (
-    toggleClose.classList.toggle('close')
-))
-toggleClose.addEventListener('click', () => (
-    margin.classList.toggle('marginMain')
-))
-toggleClose.addEventListener('click', () => (
-    margin.classList.toggle('marginSide')
-))
-toggleClose.addEventListener('click', () => (
-    textLogo.classList.toggle('text-logo-close')
-))
+toggleClose.addEventListener("click", () => sidebar.classList.toggle("close"));
+toggleClose.addEventListener("click", () =>
+  toggleClose.classList.toggle("close")
+);
+toggleClose.addEventListener("click", () =>
+  margin.classList.toggle("marginMain")
+);
+toggleClose.addEventListener("click", () =>
+  margin.classList.toggle("marginSide")
+);
+toggleClose.addEventListener("click", () =>
+  textLogo.classList.toggle("text-logo-close")
+);
 
 /* BOTÃO DE MINIMIZAR MENU LATERAL */
-const perfil = document.getElementById('perfil');
-const home = document.getElementById('home');
-const logout = document.getElementById('logout');
+const perfil = document.getElementById("perfil");
+const home = document.getElementById("home");
+const logout = document.getElementById("logout");
 
-perfil.addEventListener('click', function alterarPerfil() {
-    const contentMainPerfil = `<div class="organize" id="wrap" style="flex-direction: row; justify-content: space-between;">
+perfil.addEventListener("click", function alterarPerfil() {
+  const contentMainPerfil = `<div class="organize" id="wrap" style="flex-direction: row; justify-content: space-between;">
     <div class="user-profile">
         <img class="avatar" src="img/user.jpg" alt="Ash" />
         <div class="username">Júlia Silva</div>
@@ -143,15 +141,14 @@ perfil.addEventListener('click', function alterarPerfil() {
     </div>
 </div>
 <div class="espacamento"></div>`;
-    margin.innerHTML = contentMainPerfil;
-    perfil.classList.add('active')
-    home.classList.remove('active')
-    logout.classList.remove('active')
-})
+  margin.innerHTML = contentMainPerfil;
+  perfil.classList.add("active");
+  home.classList.remove("active");
+  logout.classList.remove("active");
+});
 
-
-home.addEventListener('click', function alterarHome(){
-    const contentMainHome = ` <div class="organize">
+home.addEventListener("click", function alterarHome() {
+  const contentMainHome = ` <div class="organize">
     <div class="container-cards">
                     <div class="card1">
                         <div class="icon-card1"><i class="bi bi-wallet"></i></div>
@@ -237,27 +234,25 @@ home.addEventListener('click', function alterarHome(){
     </div>
     `;
 
-    margin.innerHTML = contentMainHome;
-    perfil.classList.remove('active')
-    home.classList.add('active')
-    logout.classList.remove('active')
-})
-logout.addEventListener('click', function alterarLogout(){
-    const contentMainLogout = `<div class="container-logout">
+  margin.innerHTML = contentMainHome;
+  perfil.classList.remove("active");
+  home.classList.add("active");
+  logout.classList.remove("active");
+});
+logout.addEventListener("click", function alterarLogout() {
+  const contentMainLogout = `<div class="container-logout">
     <div class="box-logout">
         <h2>Tem certeza que deseja sair?</h2>                    
         <a href="../index.html"><span>Sim</span></a>
     </div>
 </div>`;
-    margin.innerHTML = contentMainLogout;
-    perfil.classList.remove('active')
-    home.classList.remove('active')
-    logout.classList.add('active')
-})
+  margin.innerHTML = contentMainLogout;
+  perfil.classList.remove("active");
+  home.classList.remove("active");
+  logout.classList.add("active");
+});
 
-
-
-const bottomNav = document.querySelector('.nav-mobile');
+const bottomNav = document.querySelector(".nav-mobile");
 
 const contentNav = `<ul class="bottom-nav">
 <div class="slider"></div>
@@ -295,32 +290,35 @@ const contentNav = `<ul class="bottom-nav">
 </ul>`;
 
 function updateContent() {
-    var largura = window.innerWidth;
-    
-    if (largura < 767) {
-        bottomNav.classList.remove('text-logo-close');
-        bottomNav.innerHTML = contentNav;
+  var largura = window.innerWidth;
 
-        $(document).ready(function () {
-            $('.bottom-nav li a').click(function(){
-                var position = $(this).position();
-                var margin = 37;
-                if(largura<400){
-                    margin = 24.8;
-                }
-                
-                $('.slider').css({"left": position.left + margin, "transform": "translateX(-50%)"});
-                $('.bottom-nav li a').removeClass('active-icon');
-                $(this).addClass('active-icon');
-            });
+  if (largura < 767) {
+    bottomNav.classList.remove("text-logo-close");
+    bottomNav.innerHTML = contentNav;
+
+    $(document).ready(function () {
+      $(".bottom-nav li a").click(function () {
+        var position = $(this).position();
+        var margin = 37;
+        if (largura < 400) {
+          margin = 24.8;
+        }
+
+        $(".slider").css({
+          left: position.left + margin,
+          transform: "translateX(-50%)",
         });
+        $(".bottom-nav li a").removeClass("active-icon");
+        $(this).addClass("active-icon");
+      });
+    });
 
-        const perfil2 = document.getElementById('perfil2');
-        const home2 = document.getElementById('home2');
-        const logout2 = document.getElementById('logout2');
+    const perfil2 = document.getElementById("perfil2");
+    const home2 = document.getElementById("home2");
+    const logout2 = document.getElementById("logout2");
 
-perfil2.addEventListener('click', function alterarPerfil2() {
-    const contentMainPerfil2 = `<div class="organize" id="wrap" style="flex-direction: row; justify-content: space-between;">
+    perfil2.addEventListener("click", function alterarPerfil2() {
+      const contentMainPerfil2 = `<div class="organize" id="wrap" style="flex-direction: row; justify-content: space-between;">
     <div class="user-profile">
         <img class="avatar" src="img/user.jpg" alt="Ash" />
         <div class="username">Júlia Silva</div>
@@ -437,13 +435,13 @@ perfil2.addEventListener('click', function alterarPerfil2() {
     </div>
 </div>
 <div class="espacamento"></div>`;
-    margin.innerHTML = contentMainPerfil2;
-    perfil2.classList.add('active-icon')
-    home2.classList.remove('active-icon')
-    logout2.classList.remove('active-icon')
-})
-home2.addEventListener('click', function alterarHome2(){
-    const contentMainHome2 = ` <div class="organize">
+      margin.innerHTML = contentMainPerfil2;
+      perfil2.classList.add("active-icon");
+      home2.classList.remove("active-icon");
+      logout2.classList.remove("active-icon");
+    });
+    home2.addEventListener("click", function alterarHome2() {
+      const contentMainHome2 = ` <div class="organize">
     <div class="container-cards">
                     <div class="card1">
                         <div class="icon-card1"><i class="bi bi-wallet"></i></div>
@@ -528,37 +526,34 @@ home2.addEventListener('click', function alterarHome2(){
                 <div class="espacamento"></div>
     </div>`;
 
-    margin.innerHTML = contentMainHome2;
-    perfil2.classList.remove('active-icon')
-    home2.classList.add('active-icon')
-    logout2.classList.remove('active-icon')
-})
-logout2.addEventListener('click', function alterarLogout2(){
-    const contentMainLogout2 = `<div class="container-logout">
+      margin.innerHTML = contentMainHome2;
+      perfil2.classList.remove("active-icon");
+      home2.classList.add("active-icon");
+      logout2.classList.remove("active-icon");
+    });
+    logout2.addEventListener("click", function alterarLogout2() {
+      const contentMainLogout2 = `<div class="container-logout">
     <div class="box-logout">
         <h2>Tem certeza que deseja sair?</h2>                    
         <a href="../index.html"><span>Sim</span></a>
     </div>
 </div>`;
-    margin.innerHTML = contentMainLogout2;
-    perfil2.classList.remove('active-icon')
-    home2.classList.remove('active-icon')
-    logout2.classList.add('active-icon')
-})
-
-
-
-    } else {
-        bottomNav.classList.add('text-logo-close');
-    }
+      margin.innerHTML = contentMainLogout2;
+      perfil2.classList.remove("active-icon");
+      home2.classList.remove("active-icon");
+      logout2.classList.add("active-icon");
+    });
+  } else {
+    bottomNav.classList.add("text-logo-close");
+  }
 }
 
-document.addEventListener('DOMContentLoaded', updateContent);
+document.addEventListener("DOMContentLoaded", updateContent);
 
-window.addEventListener('resize', updateContent);
+window.addEventListener("resize", updateContent);
 
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        home2.click();
-    }, 100);
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    home2.click();
+  }, 100);
 });

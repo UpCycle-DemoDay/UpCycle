@@ -79,8 +79,6 @@ h6 {
   opacity: 1;
 }
 
-
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -127,7 +125,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #007bff;
 }
 
@@ -162,11 +160,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #007bff;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -178,7 +176,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -190,7 +188,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -261,7 +259,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #007bff;
 }
 
@@ -291,11 +289,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #007bff;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -306,7 +304,7 @@ h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("../../../assets/img/fv_backgrond.png") center  no-repeat;
+  background: url("../../../assets/img/fv_backgrond.png") center no-repeat;
   background-size: cover;
   padding: 200px 0 320px 0;
   background-attachment: fixed;
@@ -489,11 +487,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -569,10 +567,10 @@ section {
 }
 
 #about .about-container .icon-box:hover #verde {
-  background: #26D64C;
+  background: #26d64c;
 }
 #about .about-container .icon-box:hover #azul {
-  background: #28BCFC;
+  background: #28bcfc;
 }
 #about .about-container .icon-box:hover #laranja {
   background: #ffa024;
@@ -869,8 +867,18 @@ section {
   background: #3395ff;
 }
 
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover i,
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover i {
+#portfolio
+  .portfolio-item
+  .portfolio-wrap
+  .portfolio-info
+  .link-preview:hover
+  i,
+#portfolio
+  .portfolio-item
+  .portfolio-wrap
+  .portfolio-info
+  .link-details:hover
+  i {
   color: #fff;
 }
 
@@ -881,7 +889,6 @@ section {
 #portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
-
 
 /* Testimonials Section
 --------------------------------*/
@@ -946,7 +953,6 @@ section {
 }
 
 @media (max-width: 767px) {
-
   #testimonials .testimonial-item h3,
   #testimonials .testimonial-item h4,
   #testimonials .testimonial-item p {
@@ -973,7 +979,6 @@ section {
 
 /* Team Section
 --------------------------------*/
-
 
 /* Clients Section
 --------------------------------*/
@@ -1090,7 +1095,7 @@ section {
   font-weight: 600;
 }
 
-#contact .php-email-form .error-message br+br {
+#contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1142,7 +1147,7 @@ section {
   padding: 12px 15px;
 }
 
-#contact .php-email-form button[type=submit] {
+#contact .php-email-form button[type="submit"] {
   background: #007bff;
   border: 0;
   border-radius: 20px;
@@ -1151,7 +1156,7 @@ section {
   transition: 0.3s;
 }
 
-#contact .php-email-form button[type=submit]:hover {
+#contact .php-email-form button[type="submit"]:hover {
   background: #0067d5;
   cursor: pointer;
 }
@@ -1172,9 +1177,8 @@ section {
 .img-logo {
   margin: auto;
 }
-.sobrecores{
+.sobrecores {
   margin-top: 100px;
   margin-bottom: 50px;
-  color: #012970
+  color: #012970;
 }
-

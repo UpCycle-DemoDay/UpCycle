@@ -1,8 +1,7 @@
-const content = document.querySelector('main');
+const content = document.querySelector("main");
 
 function MudançaConteudo() {
-
-    const confirm = `<div class="confirm">
+  const confirm = `<div class="confirm">
     <img src="img/confirm.png" alt="">
     <h2>Agendamento realizado!</h2>
     <div>
@@ -10,11 +9,11 @@ function MudançaConteudo() {
     </div>
     <button type="button" id="acompanhar">Acompanhar coleta</button>
 </div>`;
-    content.innerHTML = confirm;
+  content.innerHTML = confirm;
 
-    const confirmButton = document.getElementById('acompanhar');
-    confirmButton.addEventListener('click', function(){
-        const newContent = `<div class="bg"></div>
+  const confirmButton = document.getElementById("acompanhar");
+  confirmButton.addEventListener("click", function () {
+    const newContent = `<div class="bg"></div>
         <div class="more"><i class="bi bi-arrow-up-circle"></i></div>
         <div class="perfil">
             <div class="colet">
@@ -33,9 +32,8 @@ function MudançaConteudo() {
             <a href="perfilUser.html">X</a>
         </header>
     `;
-        content.innerHTML=newContent;
-    });
-
+    content.innerHTML = newContent;
+  });
 }
 
 setTimeout(MudançaConteudo, 3500);
