@@ -31,7 +31,7 @@ document.getElementById("form-endereco").addEventListener("submit", function (ev
         })
     .then(response => {
         if(response.ok){
-                alert("Usuario Criado com Sucesso!");
+                /*alert("Usuario Criado com Sucesso!");*/
                 window.location.href = '../index.html"';
         } else {
                 console.log("Erro desconhecido ao adastrar endereço");
