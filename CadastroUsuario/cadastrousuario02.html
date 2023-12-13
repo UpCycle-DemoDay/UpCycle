@@ -37,11 +37,11 @@
                     </div>
                     <div class="item-form">
                         <label for="numero">N°</label>
-                        <input type="text" name="numero" id="numero" required placeholder="123">
+                        <input type="text" name="numero" id="numero" required placeholder="123" oninput="formatarNumero(this)">
                     </div>
                     <div class="item-form">
                         <label for="cep">CEP</label>
-                        <input type="text" name="cep" id="cep" required placeholder="00000-00">
+                        <input type="text" name="cep" id="cep" required placeholder="00000-00" oninput="formatarCep(this)">
                     </div>
                 </div>
                 <div class="form form-right">
@@ -55,7 +55,7 @@
                     </div>
                     <div class="item-form">
                         <label for="uf">UF</label>
-                        <input type="text" name="uf" id="uf" required placeholder="UF">
+                        <input type="text" name="uf" id="uf" required placeholder="UF" maxlength="2" oninput="formatarUF(this)">
                     </div>
                     <div class="item-form">
                         <label for="complemento">Complemento</label>
