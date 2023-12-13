@@ -78,7 +78,7 @@ document.getElementById("registro-form").addEventListener("submit", function (ev
         .then(response => {
             if(response.ok){
                 /*É direcionado para a segunda etapa*/
-                window.location.href = 'cadastrousuario02.html';
+                window.location.href = 'cadastroUsuarioSegundaEtapa.html';
             } else {
                 console.log("Erro desconhecido ao criar novo usuário.");
             }

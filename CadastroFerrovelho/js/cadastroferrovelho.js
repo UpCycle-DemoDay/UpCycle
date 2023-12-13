@@ -1,9 +1,9 @@
 function segundaEtapa(){
-    window.location.href = 'cadastroferrovelho02.html';
+    window.location.href = 'cadastroFerrovelhoSegundaEtapa.html';
 }
 
 function redirecionaIndex(){
-    window.location.href = '../Login/loginferrovelho.html';
+    window.location.href = '../Login/loginFerrovelho.html';
 }
 
 function formatarCNPJ(input) {
