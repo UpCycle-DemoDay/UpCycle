@@ -1,11 +1,3 @@
-/**
-* Template Name: OnePage
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -529,6 +521,38 @@ h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+.header{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.header .link-arrow img{
+  width: 30px;
+  height: 30px;
+}
+
+.container-bonus-cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.container-cards{
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 767px){
+  .container-cards{
+   gap: 20px;
+  }
+}
+
 section {
   padding: 80px 0;
   overflow: hidden;

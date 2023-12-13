@@ -6,35 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Fale conosco</title>
+    <title>UpCycle</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="../assets/img/logoPNG.png" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/sobrenos.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container px-lg-5">
-            <div class="logo-container">
-                <img class="logo" src="../assets/img/logoPNG.png"> <span class="nome">UpCycle</span>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Início</a></li>
-
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    
+          <a href="../index.html" class="logo d-flex align-items-center">
+            <img src="../assets/img/logoPNG.png" alt="Logo UpCycle">
+            <span>UpCycle</span>
+          </a>
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="../index.html">Início</a></li>
+              <li><a class="nav-link scrollto" href="../sobrenos/sobrenos.html">Sobre nós</a></li>
+              <li><a class="nav-link scrollto active" href="../fale_conosco/fc.html">Contato</a></li>
+              <li><a href="../blog/blog.html">Blog</a></li>
+              <li class="dropdown"><a href="#" style="background-color: #28BCFC; padding: .4rem .6rem; border-radius: 8px; color: #fff; margin-left: 1rem; margin-right: 1rem;"><span>Começar</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li class="dropdown"><a href="#"><span>Usuário comum</span> <i class="bi bi-chevron-left"></i></a>
+                    <ul>
+                      <li><a href="../CadastroUsuario/cadastrousuario.html">Cadastrar</a></li>
+                      <li><a href="../Login/loginusuario.html">Entrar</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#"><span>Ferro-velho</span> <i class="bi bi-chevron-left"></i></a>
+                    <ul>
+                      <li><a href="../CadastroFerrovelho/cadastroferrovelho.html">Cadastrar</a></li>
+                      <li><a href="../Login/loginferrovelho.html">Entrar</a></li>
+                    </ul>
+                  </li>
                 </ul>
-            </div>
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
         </div>
-    </nav>
-    <!-- Header-->
-    <header class="py-5">
+      </header>
+
+    <div class="py-5">
         <div class="container px-lg-5">
             <div class="p-4 p-lg-5  rounded-3 text-center">
                 <div class="m-4 m-lg-5">
@@ -43,7 +63,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </div>
     <!-- Page Content-->
     <section class="pt-4">
         <div class="container px-lg-5">
@@ -190,6 +210,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
