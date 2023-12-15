@@ -85,8 +85,21 @@ document
             console.log("Erro desconhecido ao criar novo usuário.");
           }
         })
+<<<<<<< HEAD
         .catch((error) => {
           console.error("Erro ao fazer a requisição:", error);
+=======
+        .then(response => {
+            if(response.ok){
+                /*É direcionado para a segunda etapa*/
+                window.location.href = 'cadastroUsuarioSegundaEtapa.html';
+            } else {
+                console.log("Erro desconhecido ao criar novo usuário.");
+            }
+        })
+        .catch(error => {
+            console.error("Erro ao fazer a requisição:", error);
+>>>>>>> 2dde589f4b16c18e5c6a3ae35531e579aea979fd
         });
     }
   });

@@ -6,11 +6,11 @@
     <link rel="shortcut icon" href="img/logoPNG.png" type="image/x-icon">
     <link rel="stylesheet" href="css/CadastroFerrovelho.css">
     <link rel="stylesheet" href="css/CadastroFerResponsivo.css">
-    <title>Cadastro Usuário Ferro-Velho</title>
+    <title>UpCycle</title>
 </head>
 <body>
     <header class="header">
-        <a href="cadastroferrovelho.html" class="link-arrow">
+        <a href="cadastroFerrovelho.html" class="link-arrow">
             <div>
                 <img src="img/arrow.png" alt="Seta para voltar à página anterior">
             </div>
@@ -37,11 +37,11 @@
                     </div>
                     <div class="item-form">
                         <label for="numero">N°</label>
-                        <input type="text" name="numero" id="numero" required placeholder="123">
+                        <input type="text" name="numero" id="numero" required placeholder="123" oninput="formatarNumero(this)" maxlength="5">
                     </div>
                     <div class="item-form">
                         <label for="cep">CEP</label>
-                        <input type="text" name="cep" id="cep" required placeholder="00000-00">
+                        <input type="text" name="cep" id="cep" required placeholder="00000-00" oninput="formatarCep(this)">
                     </div>
                 </div>
                 <div class="form form-right">
@@ -55,7 +55,7 @@
                     </div>
                     <div class="item-form">
                         <label for="uf">UF</label>
-                        <input type="text" name="uf" id="uf" required placeholder="UF">
+                        <input type="text" name="uf" id="uf" required placeholder="UF" oninput="formatarUF(this)" maxlength="2">
                     </div>
                     <div class="item-form">
                         <label for="complemento">Complemento</label>
